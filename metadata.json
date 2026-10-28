@@ -1,0 +1,6 @@
+{
+  "name": "Thi Văn 12 - Chuyên Đề So Sánh Thơ 9+",
+  "description": "Cẩm nang và trợ thủ làm bài văn nghị luận so sánh 2 tác phẩm thơ lớp 12 đạt điểm 9+, đối chiếu hình tượng nhân vật trữ tình và phong cách nghệ thuật.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

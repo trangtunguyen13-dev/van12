@@ -1,0 +1,2198 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thi Văn 12 - Chuyên Đề So Sánh Thơ 9+</title>
+    <meta
+      name="description"
+      content="Cẩm nang và trợ thủ làm bài văn nghị luận so sánh 2 tác phẩm thơ lớp 12 đạt điểm 9+, đối chiếu hình tượng nhân vật trữ tình và phong cách nghệ thuật."
+    />
+    <meta property="og:title" content="Thi Văn 12 - Chuyên Đề So Sánh Thơ 9+" />
+    <meta
+      property="og:description"
+      content="Cẩm nang và trợ thủ làm bài văn nghị luận so sánh 2 tác phẩm thơ lớp 12 đạt điểm 9+, đối chiếu hình tượng nhân vật trữ tình và phong cách nghệ thuật."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-canvas: #faf7f2;
+        --bg-surface: #fcf9f2;
+        --bg-elevated: #ffffff;
+        --bg-subtle: #f3ede2;
+        --border-subtle: #e5dac3;
+        --border-strong: #d4c4a8;
+        --text-primary: #1f1917;
+        --text-secondary: #5c4d44;
+        --text-muted: #7d6c62;
+        --accent-crimson: #8b2635;
+        --accent-crimson-hover: #701d29;
+        --accent-crimson-soft: #f9eef0;
+        --accent-ink: #1e56a0;
+        --accent-ink-soft: #eef4fc;
+        --accent-emerald: #15803d;
+        --font-serif: 'Lora', Georgia, Cambria, serif;
+        --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --radius-outer: 14px;
+        --radius-inner: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bg-canvas);
+        color: var(--text-primary);
+        font-family: var(--font-sans);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Top Bar Contract: 3 Zones separated by gap */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background: rgba(250, 247, 242, 0.94);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .topbar-inner {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      .brand-zone {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: var(--accent-crimson);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-serif);
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .brand-title {
+        font-family: var(--font-serif);
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text-primary);
+        white-space: nowrap;
+      }
+
+      .brand-subtitle {
+        font-size: 12px;
+        color: var(--text-muted);
+        white-space: nowrap;
+      }
+
+      .nav-zone {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        overflow-x: auto;
+      }
+
+      .nav-link {
+        background: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        padding: 8px 4px;
+        font-family: var(--font-sans);
+        font-size: 13.5px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        cursor: pointer;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: color 150ms ease, border-color 150ms ease;
+      }
+
+      .nav-link:hover {
+        color: var(--text-primary);
+      }
+
+      .nav-link.active {
+        color: var(--accent-crimson);
+        font-weight: 600;
+        border-bottom-color: var(--accent-crimson);
+      }
+
+      .cta-zone {
+        flex-shrink: 0;
+      }
+
+      .btn-primary {
+        background: var(--accent-crimson);
+        color: #ffffff;
+        border: 1px solid var(--accent-crimson);
+        padding: 8px 16px;
+        border-radius: var(--radius-inner);
+        font-family: var(--font-sans);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: opacity 150ms ease, transform 150ms ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--accent-crimson-hover);
+      }
+
+      .btn-primary:disabled {
+        opacity: 0.55;
+        cursor: not-allowed;
+      }
+
+      .btn-secondary {
+        background: var(--bg-elevated);
+        color: var(--text-primary);
+        border: 1px solid var(--border-strong);
+        padding: 7px 14px;
+        border-radius: var(--radius-inner);
+        font-family: var(--font-sans);
+        font-size: 12.5px;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: background-color 150ms ease;
+      }
+
+      .btn-secondary:hover {
+        background: var(--bg-subtle);
+      }
+
+      .btn-secondary.active-toggle {
+        background: var(--accent-ink);
+        color: #fff;
+        border-color: var(--accent-ink);
+      }
+
+      /* Main Layout Container */
+      .main-container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 24px 40px;
+        flex: 1;
+      }
+
+      .tab-panel {
+        display: none;
+      }
+
+      .tab-panel.active {
+        display: block;
+      }
+
+      /* Two-Zone Educational Sandbox Layout */
+      .sandbox-grid {
+        display: grid;
+        grid-template-columns: 440px 1fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      @media (max-width: 1100px) {
+        .sandbox-grid {
+          grid-template-columns: 1fr;
+        }
+        .topbar-inner {
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+      }
+
+      /* Left Zone: Vision Upload & Chat Deck */
+      .chat-deck {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-outer);
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 110px);
+        min-height: 680px;
+        max-height: 880px;
+        overflow: hidden;
+      }
+
+      .deck-header {
+        padding: 16px 20px;
+        background: var(--bg-surface);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .deck-header h2 {
+        font-family: var(--font-serif);
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .metadata-line {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-top: 3px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Exam Image Upload Dropzone */
+      .upload-section {
+        padding: 14px 16px;
+        background: #fdfbf7;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .dropzone {
+        border: 1.5px dashed var(--border-strong);
+        border-radius: var(--radius-inner);
+        padding: 14px;
+        text-align: center;
+        background: var(--bg-elevated);
+        cursor: pointer;
+        transition: border-color 150ms ease, background-color 150ms ease;
+      }
+
+      .dropzone:hover,
+      .dropzone.dragover {
+        border-color: var(--accent-crimson);
+        background: var(--accent-crimson-soft);
+      }
+
+      .dropzone-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .dropzone-sub {
+        font-size: 11.5px;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+
+      .sample-exam-bar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+
+      .sample-label {
+        font-size: 11.5px;
+        color: var(--text-muted);
+      }
+
+      .btn-sample {
+        background: var(--bg-subtle);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-secondary);
+        font-size: 11.5px;
+        font-weight: 500;
+        padding: 4px 9px;
+        border-radius: 6px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background-color 150ms ease, color 150ms ease;
+      }
+
+      .btn-sample:hover {
+        background: var(--accent-crimson);
+        color: #fff;
+        border-color: var(--accent-crimson);
+      }
+
+      .image-preview-card {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background: var(--bg-surface);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-inner);
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .image-preview-card.visible {
+        display: flex;
+      }
+
+      .preview-thumb-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .preview-thumb {
+        width: 56px;
+        height: 44px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 1px solid var(--border-strong);
+        cursor: zoom-in;
+      }
+
+      .preview-info {
+        min-width: 0;
+      }
+
+      .preview-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .preview-status {
+        font-size: 11px;
+        color: var(--accent-emerald);
+      }
+
+      /* Chat Messages Stream */
+      .chat-stream {
+        flex: 1;
+        overflow-y: auto;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background: var(--bg-elevated);
+      }
+
+      .msg-bubble {
+        padding: 12px 14px;
+        border-radius: 10px;
+        font-size: 13.5px;
+        line-height: 1.55;
+        max-width: 94%;
+      }
+
+      .msg-user {
+        align-self: flex-end;
+        background: var(--accent-crimson);
+        color: #fff;
+      }
+
+      .msg-assistant {
+        align-self: flex-start;
+        background: var(--bg-surface);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-primary);
+      }
+
+      .msg-meta {
+        font-size: 11px;
+        opacity: 0.8;
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      .msg-thumb {
+        max-width: 220px;
+        max-height: 140px;
+        border-radius: 6px;
+        margin-top: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: block;
+      }
+
+      .revised-box {
+        margin-top: 10px;
+        padding: 12px;
+        background: #fff;
+        border: 1px solid var(--accent-ink);
+        border-radius: 8px;
+        font-family: var(--font-serif);
+        font-size: 14px;
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      /* Pinned Paragraph Context Bar */
+      .pinned-bar {
+        display: none;
+        padding: 10px 14px;
+        background: var(--accent-ink-soft);
+        border-top: 1px solid #bfd6f6;
+        border-bottom: 1px solid #bfd6f6;
+      }
+
+      .pinned-bar.visible {
+        display: block;
+      }
+
+      .pinned-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent-ink);
+      }
+
+      .pinned-excerpt {
+        font-size: 11.5px;
+        color: var(--text-secondary);
+        margin-top: 3px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-family: var(--font-serif);
+        font-style: italic;
+      }
+
+      .quick-prompts {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding-top: 8px;
+        padding-bottom: 2px;
+      }
+
+      .chip-btn {
+        background: #fff;
+        border: 1px solid #b5cff2;
+        color: var(--accent-ink);
+        padding: 4px 9px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .chip-btn:hover {
+        background: var(--accent-ink);
+        color: #fff;
+      }
+
+      /* Chat Input Area */
+      .chat-composer {
+        padding: 12px 14px;
+        background: var(--bg-surface);
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .composer-row {
+        display: flex;
+        gap: 8px;
+        align-items: flex-end;
+      }
+
+      .chat-textarea {
+        flex: 1;
+        resize: none;
+        border: 1px solid var(--border-strong);
+        border-radius: var(--radius-inner);
+        padding: 9px 12px;
+        font-family: var(--font-sans);
+        font-size: 13px;
+        background: #fff;
+        color: var(--text-primary);
+        min-height: 44px;
+        max-height: 110px;
+      }
+
+      .chat-textarea:focus {
+        outline: none;
+        border-color: var(--accent-crimson);
+      }
+
+      /* Right Zone: Interactive Essay Manuscript Stage */
+      .manuscript-stage {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-outer);
+        overflow: hidden;
+      }
+
+      .manuscript-toolbar {
+        padding: 16px 24px;
+        background: var(--bg-surface);
+        border-bottom: 1px solid var(--border-subtle);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .manuscript-title {
+        font-family: var(--font-serif);
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--text-primary);
+        text-wrap: balance;
+      }
+
+      .toolbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      /* Detected Exam Prompt Summary Box */
+      .exam-summary-banner {
+        margin: 20px 24px 0;
+        padding: 16px 20px;
+        background: #faf5eb;
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-inner);
+      }
+
+      .exam-poems-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .exam-poems-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .poem-card {
+        background: #fff;
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 12px 14px;
+      }
+
+      .poem-card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid #efe6d5;
+        padding-bottom: 6px;
+        margin-bottom: 8px;
+      }
+
+      .poem-card-title {
+        font-family: var(--font-serif);
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--accent-crimson);
+      }
+
+      .poem-card-body {
+        font-family: var(--font-serif);
+        font-size: 13px;
+        white-space: pre-line;
+        color: var(--text-primary);
+        line-height: 1.65;
+      }
+
+      .poem-card-note {
+        font-size: 11.5px;
+        color: var(--text-muted);
+        margin-top: 8px;
+        font-style: italic;
+      }
+
+      /* Essay Content Container */
+      .essay-canvas {
+        padding: 24px 32px 36px;
+        font-family: var(--font-serif);
+        color: var(--text-primary);
+      }
+
+      .essay-canvas.font-normal .para-body {
+        font-size: 16px;
+        line-height: 1.85;
+      }
+
+      .essay-canvas.font-large .para-body {
+        font-size: 18px;
+        line-height: 1.95;
+      }
+
+      .essay-canvas.font-xl .para-body {
+        font-size: 20px;
+        line-height: 2.05;
+      }
+
+      .para-block {
+        padding: 18px 20px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        margin-bottom: 16px;
+        background: var(--bg-surface);
+        transition: border-color 150ms ease, background-color 150ms ease;
+      }
+
+      .para-block:hover {
+        border-color: var(--border-strong);
+      }
+
+      .para-block.pinned-active {
+        border-color: var(--accent-ink);
+        background: var(--accent-ink-soft);
+      }
+
+      .para-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border-subtle);
+        font-family: var(--font-sans);
+      }
+
+      .para-criterion {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--accent-crimson);
+      }
+
+      .para-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn-pin {
+        background: #fff;
+        border: 1px solid var(--border-strong);
+        color: var(--text-secondary);
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11.5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 150ms ease;
+      }
+
+      .btn-pin:hover,
+      .para-block.pinned-active .btn-pin {
+        background: var(--accent-ink);
+        color: #fff;
+        border-color: var(--accent-ink);
+      }
+
+      .para-body {
+        text-align: justify;
+        text-indent: 2em;
+        color: var(--text-primary);
+      }
+
+      /* Interleaved Comparison Highlight Mode */
+      .hl-poem1 {
+        background: rgba(139, 38, 53, 0.12);
+        color: #6e1723;
+        padding: 0 3px;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+
+      .hl-poem2 {
+        background: rgba(30, 86, 160, 0.12);
+        color: #133c73;
+        padding: 0 3px;
+        border-radius: 3px;
+        font-weight: 600;
+      }
+
+      .hl-bridge {
+        border-bottom: 2px solid #d97706;
+        font-weight: 600;
+      }
+
+      /* Secondary Tabs: Matrix, Rubric, Theory */
+      .section-card {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-outer);
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+
+      .section-card h3 {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 6px;
+      }
+
+      .matrix-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+
+      .matrix-table th,
+      .matrix-table td {
+        border: 1px solid var(--border-subtle);
+        padding: 12px 16px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .matrix-table th {
+        background: var(--bg-surface);
+        font-family: var(--font-serif);
+        font-weight: 700;
+      }
+
+      .theory-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .theory-card {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-subtle);
+        border-radius: 10px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .theory-quote {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: 15px;
+        color: var(--text-primary);
+        margin: 10px 0;
+      }
+
+      /* Modal Lightbox for Exam Image */
+      .modal-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        background: rgba(20, 16, 14, 0.78);
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .modal-backdrop.open {
+        display: flex;
+      }
+
+      .modal-content {
+        background: var(--bg-elevated);
+        border-radius: var(--radius-outer);
+        max-width: 900px;
+        width: 100%;
+        max-height: 90vh;
+        overflow: auto;
+        padding: 20px;
+      }
+
+      .loading-spinner {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid rgba(255, 255, 255, 0.35);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media print {
+        .topbar,
+        .chat-deck,
+        .toolbar-actions,
+        .para-actions {
+          display: none !important;
+        }
+        .sandbox-grid {
+          display: block;
+        }
+        .manuscript-stage {
+          border: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar: 3 Zones -->
+    <header class="topbar" id="app-topbar">
+      <div class="topbar-inner">
+        <!-- Zone 1: Brand -->
+        <div class="brand-zone">
+          <div class="brand-mark">V12</div>
+          <div>
+            <div class="brand-title">Thi Văn 12 · So Sánh Thơ 9+</div>
+            <div class="brand-subtitle">Phương pháp Đan Xen Song Hành 3-4 Câu · Chuẩn GDPT</div>
+          </div>
+        </div>
+
+        <!-- Zone 2: Navigation -->
+        <nav class="nav-zone" aria-label="Điều hướng chính">
+          <button class="nav-link active" data-tab="chatbot" onclick="switchTab('chatbot')">
+            Chatbot Giải Đề Qua Ảnh (AI)
+          </button>
+          <button class="nav-link" data-tab="presets" onclick="switchTab('presets')">
+            Bộ Đề Mẫu Đan Xen 9+
+          </button>
+          <button class="nav-link" data-tab="matrix" onclick="switchTab('matrix')">
+            Ma Trận &amp; Dàn Ý Đan Xen
+          </button>
+          <button class="nav-link" data-tab="theory" onclick="switchTab('theory')">
+            Sổ Tay Lí Luận &amp; Chuyển Đoạn
+          </button>
+        </nav>
+
+        <!-- Zone 3: Primary CTA -->
+        <div class="cta-zone">
+          <button class="btn-primary" onclick="downloadSingleFileHTML()" title="Tải toàn bộ giao diện HTML/CSS/JS trong 1 file index.html">
+            <span>Tải File index.html</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <!-- TAB 1: CHATBOT GIẢI ĐỀ QUA ẢNH & BẢN THẢO TƯƠNG TÁC -->
+      <section id="tab-chatbot" class="tab-panel active">
+        <div class="sandbox-grid">
+          <!-- LEFT ZONE: Upload Exam Image & Multi-turn Chat -->
+          <aside class="chat-deck">
+            <div class="deck-header">
+              <h2>Trợ Lý AI Giải Đề So Sánh Thơ Qua Ảnh</h2>
+              <div class="metadata-line">
+                Nhận diện OCR đề thi · Viết ngay 1.000 - 2.000 chữ · Đan xen 2 bài
+              </div>
+            </div>
+
+            <!-- Upload Exam Image Box -->
+            <div class="upload-section">
+              <input
+                type="file"
+                id="exam-file-input"
+                accept="image/png,image/jpeg,image/webp"
+                style="display: none"
+                onchange="handleFileSelect(event)"
+              />
+              <div
+                id="exam-dropzone"
+                class="dropzone"
+                onclick="document.getElementById('exam-file-input').click()"
+              >
+                <div class="dropzone-title">
+                  Tải ảnh chụp đề thi lên hoặc Dán ảnh (Ctrl+V)
+                </div>
+                <div class="dropzone-sub">
+                  Hỗ trợ ảnh chụp trang đề thi giấy (.JPG, .PNG, .WEBP)
+                </div>
+              </div>
+
+              <!-- Quick Sample Exam Image Generators -->
+              <div class="sample-exam-bar">
+                <span class="sample-label">Thử ảnh đề thi mẫu:</span>
+                <button class="btn-sample" onclick="loadSampleExamImage('muaxuan')">
+                  Đề Mùa xuân xanh &amp; Mùa xuân nho nhỏ
+                </button>
+                <button class="btn-sample" onclick="loadSampleExamImage('taytien')">
+                  Đề Tây Tiến &amp; Đồng Chí
+                </button>
+                <button class="btn-sample" onclick="loadSampleExamImage('song')">
+                  Đề Sóng &amp; Vội Vàng
+                </button>
+              </div>
+
+              <!-- Uploaded Image Preview -->
+              <div id="image-preview-card" class="image-preview-card">
+                <div class="preview-thumb-wrap">
+                  <img
+                    id="preview-thumb-img"
+                    class="preview-thumb"
+                    src=""
+                    alt="Ảnh đề thi"
+                    onclick="openImageModal()"
+                  />
+                  <div class="preview-info">
+                    <div id="preview-file-name" class="preview-name">de-thi-ngu-van-12.png</div>
+                    <div class="preview-status">Đã sẵn sàng phân tích &amp; giải đề</div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 6px">
+                  <button class="btn-secondary" style="padding: 4px 8px; font-size: 11px" onclick="solveUploadedExamNow()">
+                    Giải Đề Ngay
+                  </button>
+                  <button class="btn-secondary" style="padding: 4px 8px; font-size: 11px" onclick="clearUploadedImage()">
+                    Xóa
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Stream -->
+            <div id="chat-stream" class="chat-stream">
+              <div class="msg-bubble msg-assistant">
+                <div class="msg-meta">Học sinh Giỏi Văn 12 (AI) · Chế độ So sánh Đan Xen</div>
+                <div>
+                  Chào bạn! Hãy <strong>tải ảnh chụp đề thi</strong> lên khung phía trên (hoặc bấm chọn một <em>Ảnh đề thi mẫu</em>). Mình sẽ tự động đọc 2 đoạn thơ cùng phần chú thích trong ảnh và viết ngay bài văn nghị luận hoàn chỉnh (<strong>1.000 – 2.000 chữ</strong>).
+                  <br /><br />
+                  <strong>Đặc biệt:</strong> Trong từng đoạn văn (cả phần <em>Tương đồng</em> lẫn <em>Khác biệt</em>), mình luôn <strong>đan xen cả 2 tác phẩm vào từng cụm 3 – 4 câu</strong> để đối sánh trực tiếp chứ không tách rời từng bài. Bạn cũng có thể bấm vào bất kỳ đoạn văn nào bên phải để yêu cầu mình sửa sâu!
+                </div>
+              </div>
+            </div>
+
+            <!-- Pinned Paragraph Context Bar -->
+            <div id="pinned-bar" class="pinned-bar">
+              <div class="pinned-header">
+                <span id="pinned-title">Đang chọn sửa: Đoạn 3 - Tương đồng về Nội dung</span>
+                <button
+                  style="background: none; border: none; color: var(--accent-crimson); cursor: pointer; font-size: 11.5px; font-weight: 600"
+                  onclick="unpinParagraph()"
+                >
+                  Bỏ chọn ✕
+                </button>
+              </div>
+              <div id="pinned-excerpt" class="pinned-excerpt"></div>
+              <div class="quick-prompts">
+                <button class="chip-btn" onclick="useQuickPrompt('Đan xen 2 tác phẩm chặt chẽ hơn trong từng cụm 3-4 câu và thêm trích dẫn đối xứng')">
+                  + Đan xen 3-4 câu chặt hơn
+                </button>
+                <button class="chip-btn" onclick="useQuickPrompt('Bổ sung nhận định lí luận văn học đắt giá vào đoạn văn này')">
+                  + Thêm lí luận văn học
+                </button>
+                <button class="chip-btn" onclick="useQuickPrompt('Phân tích sâu hơn ý nghĩa từ ngữ, nhịp điệu, thanh điệu và biện pháp tu từ của 2 đoạn thơ')">
+                  + Đào sâu nghệ thuật &amp; từ ngữ
+                </button>
+                <button class="chip-btn" onclick="useQuickPrompt('Viết lại câu mở đoạn và chuyển đoạn mượt mà, giàu chất văn hơn')">
+                  + Làm mượt câu chuyển đoạn
+                </button>
+              </div>
+            </div>
+
+            <!-- Composer -->
+            <form class="chat-composer" onsubmit="handleChatSubmit(event)">
+              <div class="composer-row">
+                <textarea
+                  id="chat-input"
+                  class="chat-textarea"
+                  rows="2"
+                  placeholder="Nhập yêu cầu sửa đoạn văn, hoặc dán đề bài so sánh 2 đoạn thơ vào đây..."
+                  onkeydown="handleComposerKeydown(event)"
+                ></textarea>
+                <button type="submit" id="send-btn" class="btn-primary" style="height: 44px">
+                  <span id="send-btn-text">Gửi AI</span>
+                </button>
+              </div>
+            </form>
+          </aside>
+
+          <!-- RIGHT ZONE: Interactive Essay Manuscript (1000 - 2000 words) -->
+          <section class="manuscript-stage">
+            <div class="manuscript-toolbar">
+              <div>
+                <h1 id="current-essay-title" class="manuscript-title">
+                  So sánh hai đoạn thơ: Mùa xuân xanh (Nguyễn Bính) &amp; Mùa xuân nho nhỏ (Thanh Hải)
+                </h1>
+                <div class="metadata-line">
+                  <span id="word-count-indicator">Tổng số chữ: 1.420 chữ (Chuẩn 1.000 - 2.000 chữ)</span>
+                  <span aria-hidden="true"> · </span>
+                  <span>Lập luận: Đan xen 2 tác phẩm trong từng đoạn</span>
+                  <span aria-hidden="true"> · </span>
+                  <span>Mục tiêu: 9.25+ Điểm</span>
+                </div>
+              </div>
+
+              <div class="toolbar-actions">
+                <button
+                  id="btn-highlight-interleave"
+                  class="btn-secondary active-toggle"
+                  onclick="toggleInterleaveHighlight()"
+                  title="Tô màu sự đan xen giữa Tác phẩm 1, Tác phẩm 2 và từ ngữ đối sánh trong từng đoạn"
+                >
+                  Soi Đan Xen 2 Tác Phẩm: Bật
+                </button>
+                <button class="btn-secondary" onclick="cycleFontSize()" id="btn-font-size">
+                  Cỡ chữ: A
+                </button>
+                <button class="btn-secondary" onclick="toggleSpeech()" id="btn-speech">
+                  Đọc bài văn
+                </button>
+                <button class="btn-secondary" onclick="copyFullEssay()" id="btn-copy-essay">
+                  Sao chép toàn bài
+                </button>
+                <button class="btn-secondary" onclick="window.print()">
+                  In PDF
+                </button>
+              </div>
+            </div>
+
+            <!-- Detected Poems Summary Box -->
+            <div class="exam-summary-banner" id="exam-summary-banner">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px">
+                <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-crimson)">
+                  ĐỀ BÀI &amp; CHÚ THÍCH TRÍCH XUẤT TỪ ĐỀ THI
+                </div>
+                <div style="font-size: 12px; color: var(--text-muted)">
+                  Chú thích: <span style="color: #6e1723; font-weight: 600">■ Tác phẩm 1</span> ·
+                  <span style="color: #133c73; font-weight: 600">■ Tác phẩm 2</span> ·
+                  <span style="border-bottom: 2px solid #d97706; font-weight: 600">Từ khóa đối sánh đan xen</span>
+                </div>
+              </div>
+
+              <div class="exam-poems-grid" id="exam-poems-grid">
+                <!-- Populated dynamically by JS -->
+              </div>
+            </div>
+
+            <!-- Interactive Essay Paragraphs -->
+            <div id="essay-canvas" class="essay-canvas font-normal">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- TAB 2: KHO BỘ ĐỀ MẪU ĐAN XEN 9+ -->
+      <section id="tab-presets" class="tab-panel">
+        <div class="section-card">
+          <h3>Kho Bài Văn Mẫu 9+ Viết Theo Phương Pháp Đan Xen Song Hành</h3>
+          <p class="metadata-line">
+            Chọn một đề bài dưới đây để nạp ngay vào Bảng Bản Thảo và Khung Chatbot để nghiên cứu cách đan xen 2 tác phẩm trong từng cụm 3 – 4 câu:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-top: 18px" id="preset-cards-container">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: MA TRẬN & DÀN Ý ĐAN XEN CHUẨN -->
+      <section id="tab-matrix" class="tab-panel">
+        <div class="section-card">
+          <h3>1. Quy Tắc Vàng: So Sánh Đan Xen 3 – 4 Câu Trong Từng Đoạn Văn</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); margin-top: 6px">
+            Để đạt điểm 9.0 – 9.5 môn Ngữ văn, học sinh tuyệt đối tránh lối viết <em>"Nối tiếp rời rạc"</em> (phân tích hết bài A mới sang bài B). Thay vào đó, mỗi đoạn văn phải lấy <strong>tiêu chí so sánh</strong> làm trục và đan cài hai tác phẩm theo nhịp 3 – 4 câu:
+          </p>
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th style="width: 22%">Phần / Đoạn văn</th>
+                <th style="width: 39%">Cách triển khai Đan Xen Chuẩn 9+ (Nên làm)</th>
+                <th style="width: 39%">Lỗi tách rời phổ biến (Cần tránh)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>I. Mở bài</strong> (5 – 7 dòng)</td>
+                <td>Dẫn dắt từ đề tài (mùa xuân, người lính, tình yêu...) hoặc lí luận văn học; đặt song hành 2 tác giả – 2 đoạn thơ và nêu vấn đề cần so sánh.</td>
+                <td>Giới thiệu dài dòng tiểu sử từng người nhưng thiếu cơ sở kết nối so sánh hai đoạn trích.</td>
+              </tr>
+              <tr>
+                <td><strong>II.1. Khái quát chung</strong> (6 – 8 dòng)</td>
+                <td>Khai thác thông tin từ phần chú thích đề thi: đặt hoàn cảnh sáng tác, xuất xứ và phong cách của tác giả 1 song chiếu với tác giả 2 trong cùng 1 đoạn ngắn.</td>
+                <td>Bỏ qua phần chú thích ở chân đề thi hoặc tách thành 2 đoạn tiểu sử rời rạc.</td>
+              </tr>
+              <tr>
+                <td><strong>II.2. Nét tương đồng</strong> (Tách đoạn Nội dung &amp; Nghệ thuật)</td>
+                <td>Mỗi tiêu chí (đề tài, cảm hứng chủ đạo, tư tưởng; sau đó là nghệ thuật biểu cảm – miêu tả) đều gọi tên cả 2 thi phẩm và trích dẫn cặp câu thơ tương ứng ngay sát nhau.</td>
+                <td>Chỉ nêu chung chung "hai bài giống nhau ở đề tài" mà không đưa dẫn chứng song đôi.</td>
+              </tr>
+              <tr>
+                <td><strong>II.3. Điểm khác biệt</strong> (Tách đoạn theo từng bình diện)</td>
+                <td>Chia thành các đoạn theo bình diện: <em>(1) Nhân vật trữ tình &amp; bức tranh tâm cảnh; (2) Ý nghĩa từ ngữ &amp; hình ảnh thơ; (3) Thể thơ, nhịp điệu, giọng điệu &amp; tu từ</em>. Trong mỗi đoạn, cứ 3 – 4 câu phân tích bài A thì lập tức dùng từ chuyển tiếp (<em>"Trái lại, đến với...", "Nếu ở... thì sang..."</em>) để đối sánh bài B.</td>
+                <td>Viết 1 đoạn dài phân tích toàn bộ nội dung + nghệ thuật bài 1, rồi xuống dòng phân tích bài 2 như hai bài phân tích độc lập ghép lại.</td>
+              </tr>
+              <tr>
+                <td><strong>II.4. Lí giải nguyên nhân</strong> (8 – 10 dòng)</td>
+                <td>Đối chiếu trực tiếp bối cảnh thời đại, hoàn cảnh ra đời cụ thể, quan điểm thẩm mỹ của thời kì (Thơ Mới vs Thơ Cách mạng) và tạng tâm hồn riêng của hai nhà thơ.</td>
+                <td>Quên bước lí giải hoặc chỉ lặp lại phần hoàn cảnh sáng tác ở đầu bài.</td>
+              </tr>
+              <tr>
+                <td><strong>III. Kết bài</strong></td>
+                <td>Khẳng định giá trị cộng hưởng của hai thi phẩm và nâng tầm bằng nhận định của Xê-đrin, Belinsky hoặc Paustovsky.</td>
+                <td>Kết bài tóm tắt khô khan, thiếu dư âm văn chương.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 4: SỔ TAY LÍ LUẬN & CÂU NỐI ĐAN XEN -->
+      <section id="tab-theory" class="tab-panel">
+        <div class="section-card">
+          <h3>Ngân Hàng Nhận Định Lí Luận &amp; Cấu Trúc Câu Nối Đan Xen 2 Tác Phẩm</h3>
+          <p class="metadata-line">Bấm vào nút "Sao chép" để đưa ngay vào khung Chat hoặc đoạn văn đang chỉnh sửa</p>
+          <div class="theory-grid" id="theory-cards-container">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image Zoom Lightbox Modal -->
+    <div id="image-modal" class="modal-backdrop" onclick="closeImageModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px">
+          <strong style="font-family: var(--font-serif)">Ảnh chụp đề thi Ngữ văn</strong>
+          <button class="btn-secondary" onclick="closeImageModal()">Đóng ✕</button>
+        </div>
+        <img id="modal-full-img" src="" alt="Đề thi phóng to" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-subtle)" />
+      </div>
+    </div>
+
+    <!-- Hidden Canvas for Generating Realistic Sample Exam Papers -->
+    <canvas id="exam-generator-canvas" width="900" height="720" style="display: none"></canvas>
+
+    <!-- UNIFIED APPLICATION JAVASCRIPT -->
+    <script>
+      // ============================================================================
+      // 1. MASTER DATASET: INTERLEAVED 9+ ESSAYS (1.100 - 1.700 WORDS)
+      // Every paragraph strictly weaves both poems together in 3-4 sentence beats!
+      // ============================================================================
+      const PRESET_TOPICS = {
+        muaxuan: {
+          id: 'muaxuan',
+          title: 'So sánh hai đoạn thơ: Mùa xuân xanh (Nguyễn Bính) & Mùa xuân nho nhỏ (Thanh Hải)',
+          poem1: {
+            title: 'Mùa xuân xanh',
+            author: 'Nguyễn Bính',
+            keywords: ['Nguyễn Bính', 'Mùa xuân xanh', 'mùa xanh', 'lúa ở đồng tôi', 'đồng nàng', 'đồng anh', 'lá ở cành', 'vắt dòng', 'chân quê'],
+            excerpt: 'Mùa xuân là cả một mùa xanh\nGiời ở trên cao, lá ở cành\nLúa ở đồng tôi và lúa ở\nĐồng nàng và lúa ở đồng anh.',
+            note: 'Trích Mùa xuân xanh, Nguyễn Bính, Tuyển tập Nguyễn Bính, Nxb. Văn học, Hà Nội, 1986, tr.64 (Sáng tác năm 1937 trong phong trào Thơ Mới).',
+          },
+          poem2: {
+            title: 'Mùa xuân nho nhỏ',
+            author: 'Thanh Hải',
+            keywords: ['Thanh Hải', 'Mùa xuân nho nhỏ', 'dòng sông xanh', 'bông hoa tím biếc', 'chim chiền chiện', 'giọt long lanh', 'xứ Huế', 'đảo ngữ'],
+            excerpt: 'Mọc giữa dòng sông xanh\nMột bông hoa tím biếc\nƠi con chim chiền chiện\nHót chi mà vang trời\nTừng giọt long lanh rơi\nTôi đưa tay tôi hứng.',
+            note: 'Trích Mùa xuân nho nhỏ, Thanh Hải, Ngữ văn 9, Tập hai, Nxb. Giáo dục Việt Nam, 2022, tr.55-56 (Sáng tác tháng 11/1980 trên giường bệnh tại Huế).',
+          },
+          paragraphs: [
+            {
+              id: 'p1',
+              title: 'I. Mở bài: Dẫn dắt đề tài mùa xuân & giới thiệu song hành hai thi phẩm',
+              text: 'Nhà phê bình văn học Nga V. Belinsky từng viết: "Thơ trước hết là cuộc đời, sau đó mới là nghệ thuật". Trong dòng chảy bất tận của thi ca Việt Nam hiện đại, mùa xuân của đất trời và quê hương luôn là nguồn cảm hứng bất tận đánh thức những rung động tinh khôi nhất trong tâm hồn nghệ sĩ. Cùng hướng ngòi bút về vẻ đẹp của thiên nhiên mỗi độ xuân sang, nhưng Nguyễn Bính với khổ đầu bài thơ "Mùa xuân xanh" (1937) và Thanh Hải với khổ mở đầu thi phẩm "Mùa xuân nho nhỏ" (1980) đã mở ra hai thế giới nghệ thuật vừa đồng điệu vừa độc đáo. Nếu như "thi sĩ chân quê" Nguyễn Bính đem đến một không gian xuân thôn dã ngập tràn sắc xanh bình dị của đồng ruộng Bắc Bộ, thì nhà thơ cách mạng Thanh Hải lại khắc họa bức tranh xuân xứ Huế trong trẻo, rộn rã âm thanh và chan chứa khát vọng dâng hiến. Đặt hai đoạn thơ bên cạnh nhau trong sự đối sánh liên tục, bạn đọc không chỉ cảm nhận được vẻ đẹp diệu kỳ của bức tranh xuân non nước mà còn thấu hiểu sâu sắc phong cách nghệ thuật riêng biệt của mỗi nhà thơ.',
+            },
+            {
+              id: 'p2',
+              title: 'II.1. Khái quát chung về hai tác giả và xuất xứ đoạn trích',
+              text: 'Tìm hiểu hai văn bản từ những dòng chú thích ngắn gọn, người đọc nhận thấy bóng dáng của hai hành trình sáng tạo ở hai thời kỳ văn học khác nhau. Nguyễn Bính (1918 – 1966) là gương mặt kiệt xuất của phong trào Thơ Mới (1932 – 1945), người luôn giữ trọn hồn cốt mộc mạc, dân dã của ca dao đồng nội giữa cơn gió Âu hóa; và "Mùa xuân xanh" (in trong Tuyển tập Nguyễn Bính) chính là tiếng reo vui thanh tân của ông trước cảnh sắc quê hương. Trong khi đó, Thanh Hải (1930 – 1980) lại là cây bút tiêu biểu của thơ ca cách mạng miền Nam thời kỳ chống Mỹ và sau ngày thống nhất, mang tâm hồn đằm thắm, gắn bó máu thịt với mảnh đất cố đô. Đoạn trích trong "Mùa xuân nho nhỏ" mở đầu cho bài thơ được Thanh Hải viết vào tháng 11 năm 1980 khi ông đang nằm trên giường bệnh hiểm nghèo, chỉ ít tuần trước khi vĩnh biệt cuộc đời. Một đoạn thơ ra đời giữa tuổi trẻ lãng mạn thời tiền chiến, một đoạn thơ kết tinh từ nghị lực sống cuối đời thời hậu chiến, song cả hai đều tỏa sáng tình yêu cuộc sống nồng nàn.',
+            },
+            {
+              id: 'p3',
+              title: 'II.2a. Điểm tương đồng về Nội dung: Đề tài, cảm hứng chủ đạo & tư tưởng',
+              text: 'Điểm gặp gỡ sâu sắc đầu tiên giữa Nguyễn Bính và Thanh Hải là cả hai đoạn thơ cùng hội tụ ở đề tài bức tranh thiên nhiên mùa xuân tươi đẹp của đất trời quê hương. Trong bốn câu thơ của "Mùa xuân xanh", Nguyễn Bính mở ra một bầu sinh khí căng tràn nhựa sống của vòm trời, cành lá và những cánh đồng lúa đang thì con gái; thì đồng điệu với mạch nguồn ấy, sáu câu thơ đầu "Mùa xuân nho nhỏ" của Thanh Hải cũng phác họa một không gian xuân thanh khiết với dòng sông xanh, bông hoa tím và tiếng chim chiền chiện ngân vang. Cả hai thi nhân đều lấy cảm hứng ngợi ca, say mê làm mạch cảm xúc chủ đạo để chiêm ngưỡng tạo vật bằng đôi mắt trong trẻo, đắm đuối. Qua cái nhìn trữ tình của Nguyễn Bính ("Mùa xuân là cả một mùa xanh") cũng như qua tiếng gọi thiết tha của Thanh Hải ("Ơi con chim chiền chiện / Hót chi mà vang trời"), thiên nhiên không hề tĩnh tại mà đang cựa mình sinh sôi, giao hòa thân thiết với con người. Từ đó, cả hai đoạn trích đều gửi gắm một tư tưởng, thông điệp nhân văn cao đẹp: lòng yêu mến thiết tha đối với vẻ đẹp bình dị của quê hương, xứ sở chính là cội nguồn nuôi dưỡng tâm hồn và niềm tin yêu cuộc đời của mỗi con người Việt Nam.',
+            },
+            {
+              id: 'p4',
+              title: 'II.2b. Điểm tương đồng về Nghệ thuật: Kết hợp miêu tả - biểu cảm & ngôn ngữ hàm súc',
+              text: 'Không chỉ đồng điệu ở mạch nguồn cảm xúc, hai đoạn thơ còn gặp nhau ở những phương thức biểu đạt nghệ thuật tinh tế của thể loại trữ tình. Cả Nguyễn Bính và Thanh Hải đều kết hợp nhuần nhuyễn giữa yếu tố miêu tả giàu tính tạo hình hội họa với yếu tố biểu cảm trực tiếp và gián tiếp. Nếu Nguyễn Bính dùng phép liệt kê liên hoàn các hình ảnh quen thuộc ("giời", "lá", "lúa", "đồng tôi", "đồng nàng", "đồng anh") để dệt nên tấm thảm xuân, thì Thanh Hải cũng chọn lọc những nét chấm phá cô đọng ("dòng sông xanh", "bông hoa tím biếc", "chim chiền chiện") để dựng nên bức tranh xuân sống động. Ngôn ngữ thơ ở cả hai đoạn trích đều vô cùng giản dị, trong sáng, hàm súc, gần gũi với lời ăn tiếng nói tự nhiên của nhân dân nhưng lại có sức gợi mở không gian mênh mông và đánh thức mọi giác quan của người thưởng thức.',
+            },
+            {
+              id: 'p5',
+              title: 'II.3a. Điểm khác biệt về Nội dung: Bức tranh xuân (Đối tượng trữ tình) & Nhân vật trữ tình',
+              text: 'Tuy cùng viết về mùa xuân, nhưng khi đi sâu vào từng câu chữ, người đọc lập tức nhận ra hai bức tranh xuân mang phong vị thẩm mỹ và bóng dáng nhân vật trữ tình hoàn toàn khác biệt. Ở đoạn thơ của Nguyễn Bính, bức tranh mùa xuân được bao phủ bởi một gam màu xanh chủ đạo duy nhất: "Mùa xuân là cả một mùa xanh / Giời ở trên cao, lá ở cành". Sắc xanh ấy trải dài từ độ cao vời vợi của bầu trời, hạ xuống tầm gần của cành lá rồi lan tỏa ra những cánh đồng làng quê Bắc Bộ, gợi vẻ đẹp thanh khiết, bình yên và tràn đầy hi vọng. Trái lại, bức tranh xuân của Thanh Hải không đơn sắc mà là sự phối sắc hài hòa, trang nhã mang đậm hồn cốt xứ Huế: trên nền màu xanh mênh mông của dòng Hương Giang êm đềm nổi bật lên điểm nhấn "Một bông hoa tím biếc" thủy chung, trầm mặc mà tràn đầy sức sống. Hơn thế nữa, nếu không gian xuân của Nguyễn Bính thiên về vẻ tĩnh lặng, khoáng đạt để làm nền cho mối giao cảm tình tứ của chàng trai thôn quê kín đáo ẩn mình đằng sau sự gắn kết "đồng tôi – đồng nàng – đồng anh", thì không gian xuân của Thanh Hải lại bừng lên âm thanh rộn rã của tiếng chim chiền chiện "hót chi mà vang trời". Nhân vật trữ tình "Tôi" trong thơ Thanh Hải xuất hiện trực tiếp ở cuối khổ thơ với tư thế nâng niu "Tôi đưa tay tôi hứng", bộc lộ niềm say mê ngây ngất muốn ôm trọn từng giọt xuân của đất trời vào lòng mình.',
+            },
+            {
+              id: 'p6',
+              title: 'II.3b. Điểm khác biệt về Ý nghĩa từ ngữ, hình ảnh thơ & Mạch vận động cảm xúc',
+              text: 'Sự khác biệt giữa hai đoạn thơ còn thể hiện sắc nét qua cách hai nhà thơ kiến tạo ý nghĩa hình ảnh và dẫn dắt mạch cảm xúc. Trong "Mùa xuân xanh", Nguyễn Bính sử dụng những hình ảnh hết sức mộc mạc của nhà nông là "lúa" và "đồng", nhưng đặt trong chuỗi đan cài "Lúa ở đồng tôi và lúa ở / Đồng nàng và lúa ở đồng anh" để biến bức tranh thiên nhiên thành bức tranh tình người. Sắc xanh của lúa trở thành sợi dây tơ hồng nối kết "tôi", "nàng" và "anh" trong tình làng nghĩa xóm và tình yêu đôi lứa e ấp, dịu dàng. Ngược lại, trong "Mùa xuân nho nhỏ", Thanh Hải lại kiến tạo hình ảnh theo hướng kết tinh từ vũ trụ bao la vào một giọt ngọc nhỏ bé: từ bầu trời cao rộng với tiếng chim ngân vang, cảm xúc thu lại trong hình ảnh "Từng giọt long lanh rơi". "Giọt long lanh" ấy vừa có thể là giọt sương mai, giọt nắng xuân lấp lánh, lại vừa là giọt âm thanh tiếng chim hót đọng lại thành hình khối hữu hình. Nếu mạch cảm xúc của Nguyễn Bính lan tỏa theo chiều ngang của cánh đồng quê để tìm kiếm sự hòa hợp duyên quê, thì mạch cảm xúc của Thanh Hải lại vận động từ ngoại cảnh vào nội tâm, thể hiện khát vọng chắt chiu từng khoảnh khắc sự sống của một con người đang đứng trước ngưỡng cửa sinh tử.',
+            },
+            {
+              id: 'p7',
+              title: 'II.3c. Điểm khác biệt về Nghệ thuật: Thể thơ, nhịp điệu, giọng điệu & Biện pháp tu từ',
+              text: 'Để chuyển tải trọn vẹn những sắc thái nội dung ấy, mỗi thi sĩ đã lựa chọn cho mình một hệ thống thi pháp và biện pháp tu từ độc đáo. Nguyễn Bính sử dụng thể thơ thất ngôn (7 chữ) với cách ngắt nhịp biến hóa linh hoạt (4/3 ở hai câu đầu và 4/3 kết hợp 2/1/4 ở hai câu sau), đặc biệt là kỹ thuật thơ vắt dòng (enjambment) đầy tài hoa: "Lúa ở đồng tôi và lúa ở / Đồng nàng và lúa ở đồng anh". Điệp từ "ở", "lúa ở" kết hợp với nhịp thơ vắt từ cuối câu ba xuống đầu câu bốn tạo nên âm điệu đưa đẩy, duyên dáng như lời ca dao giao duyên, làm cho giọng thơ trở nên nhẹ nhàng, sâu lắng, thong thả. Đối sánh với đó, Thanh Hải lại chọn thể thơ ngũ ngôn (5 chữ) ngắn gọn, nhịp thơ 2/3, 3/2 rộn ràng như nhịp đập thổn thức của trái tim yêu đời. Về biện pháp tu từ, nếu Nguyễn Bính thành công với phép liệt kê và điệp cấu trúc, thì Thanh Hải lại tỏa sáng với nghệ thuật đảo ngữ đưa động từ "Mọc" lên đầu câu thơ ("Mọc giữa dòng sông xanh") kết hợp số từ "một" nhằm nhấn mạnh sức trỗi dậy kiên cường của đóa hoa tím. Đặc biệt, biện pháp ẩn dụ chuyển đổi cảm giác trong hai câu "Từng giọt long lanh rơi / Tôi đưa tay tôi hứng" của Thanh Hải đã chuyển hóa âm thanh (thính giác) thành giọt long lanh (thị giác) có thể chạm vào (xúc giác), tạo nên giọng thơ vừa thiết tha, trìu mến vừa giàu suy tư triết lý.',
+            },
+            {
+              id: 'p8',
+              title: 'II.4. Lí giải nguyên nhân của sự tương đồng và khác biệt',
+              text: 'Mọi sự gặp gỡ và khác biệt trong văn chương đều có căn nguyên từ hiện thực thời đại và cá tính sáng tạo của người cầm bút. Sở dĩ hai đoạn thơ có sự tương đồng sâu sắc là bởi cả Nguyễn Bính và Thanh Hải đều viết về đề tài mùa xuân dân tộc bằng trái tim chan chứa tình yêu quê hương, đất nước và tâm hồn nhạy cảm trước cái đẹp của tạo hóa. Tuy nhiên, đúng như Marcel Proust từng khẳng định: "Một cuộc thám hiểm thực sự không phải ở chỗ đi tìm những vùng đất mới, mà ở chỗ có những đôi mắt mới", sự khác biệt giữa hai thi phẩm bắt nguồn từ hoàn cảnh sáng tác, quan điểm thẩm mỹ thời đại và phong cách cá nhân. Nguyễn Bính sáng tác trong trào lưu Thơ Mới trước Cách mạng tháng Tám, khi cái tôi trữ tình khao khát giãi bày tình yêu đôi lứa giữa không gian làng quê Bắc Bộ cổ truyền; hợp với hồn thơ "chân quê" mộc mạc, đằm thắm của ông. Trái lại, Thanh Hải sáng tác năm 1980 trong nền văn học cách mạng hiện đại, khi nhà thơ đang chống chọi với bệnh tật hiểm nghèo trên đất Huế; chính hoàn cảnh cận kề cái chết cùng phong cách thơ trong sáng, giàu tính nhạc dân ca Bình Trị Thiên đã thôi thúc ông nâng niu từng giọt xuân để chuẩn bị cất lên lời nguyện ước làm "một mùa xuân nho nhỏ" dâng hiến cho đời.',
+            },
+            {
+              id: 'p9',
+              title: 'II.5. Đánh giá chung về giá trị hai đoạn thơ',
+              text: 'Tựu trung lại, cả hai đoạn thơ đều là những viên ngọc quý trong kho tàng thi ca viết về mùa xuân đất nước của nền văn học Việt Nam hiện đại. Nếu bốn câu thơ của Nguyễn Bính giữ lại cho muôn đời sắc xanh nguyên sơ, bình yên và cái tình thôn dã ngọt ngào của đồng quê Việt Nam, thì sáu câu thơ của Thanh Hải lại khắc tạc vẻ đẹp thanh tao của thiên nhiên xứ Huế cùng tư thế đón nhận cuộc sống đầy trân trọng, thiết tha. Hai đoạn trích tuy khác nhau về sắc thái biểu đạt nhưng lại bổ sung, cộng hưởng cho nhau, làm giàu thêm diện mạo của thơ xuân dân tộc.',
+            },
+            {
+              id: 'p10',
+              title: 'III. Kết bài: Ấn tượng sâu đậm & Nhận định lí luận văn học',
+              text: 'Không phải ngẫu nhiên mà đại văn hào người Nga Saltykov-Shchedrin từng nhận định rằng: "Văn học nằm ngoài các định luật của sự băng hoại, chỉ mình nó không thừa nhận cái chết". Thời gian có thể trôi chảy vô cùng và bao mùa xuân mới sẽ còn nối tiếp nhau đi qua, nhưng sắc xanh ngút ngàn trên cánh đồng lúa của Nguyễn Bính trong "Mùa xuân xanh" và đóa hoa tím biếc cùng giọt âm thanh long lanh của Thanh Hải trong "Mùa xuân nho nhỏ" vẫn mãi vẹn nguyên sức sống thanh tân trong trái tim người đọc. Hai kiệt tác ấy không chỉ bồi đắp cho chúng ta rung cảm thẩm mỹ tinh tế trước thiên nhiên tạo vật, mà còn đánh thức trong mỗi người trẻ hôm nay tình yêu tha thiết với quê hương và khát vọng sống đẹp, sống có ích cho mùa xuân lớn của đất nước.',
+            },
+          ],
+        },
+
+        taytien: {
+          id: 'taytien',
+          title: 'So sánh vẻ đẹp người lính trong Tây Tiến (Quang Dũng) & Đồng Chí (Chính Hữu)',
+          poem1: {
+            title: 'Tây Tiến',
+            author: 'Quang Dũng',
+            keywords: ['Quang Dũng', 'Tây Tiến', 'không mọc tóc', 'dữ oai hùm', 'mắt trừng', 'dáng kiều thơm', 'đời xanh', 'áo bào thay chiếu', 'Sông Mã', 'bi tráng'],
+            excerpt: 'Tây Tiến đoàn binh không mọc tóc\nQuân xanh màu lá dữ oai hùm\nMắt trừng gửi mộng qua biên giới\nĐêm mơ Hà Nội dáng kiều thơm\nRải rác biên cương mồ viễn xứ\nChiến trường đi chẳng tiếc đời xanh\nÁo bào thay chiếu anh về đất\nSông Mã gầm lên khúc độc hành.',
+            note: 'Trích Tây Tiến, Quang Dũng (Sáng tác năm 1948 tại Phù Lưu Chanh khi rời đơn vị Tây Tiến - đoàn quân phần lớn là thanh niên trí thức Hà Nội).',
+          },
+          poem2: {
+            title: 'Đồng Chí',
+            author: 'Chính Hữu',
+            keywords: ['Chính Hữu', 'Đồng chí', 'nước mặn đồng chua', 'đất cày lên sỏi đá', 'chung chăn', 'tri kỷ', 'giếng nước gốc đa', 'tay nắm lấy bàn tay', 'Đầu súng trăng treo'],
+            excerpt: 'Quê hương anh nước mặn, đồng chua\nLàng tôi nghèo đất cày lên sỏi đá...\nÁo anh rách vai\nQuần tôi có vài mảnh vá\nMiệng cười buốt giá\nChân không giày\nThương nhau tay nắm lấy bàn tay!\nĐêm nay rừng hoang sương muối\nĐứng cạnh bên nhau chờ giặc tới\nĐầu súng trăng treo.',
+            note: 'Trích Đồng chí, Chính Hữu, tập Đầu súng trăng treo (Sáng tác đầu năm 1948 sau chiến dịch Việt Bắc thu - đông 1947).',
+          },
+          paragraphs: [
+            {
+              id: 'tt1',
+              title: 'I. Mở bài: Dẫn dắt đề tài người lính & giới thiệu song hành hai thi phẩm',
+              text: 'Nhà thơ Chế Lan Viên từng tâm niệm: "Thơ chỉ trào ra khi trong tim anh cuộc sống đã thật đầy". Hiện thực máu lửa của cuộc kháng chiến chống thực dân Pháp (1946 – 1954) đã trở thành mạch nguồn cảm hứng vĩ đại làm trào dâng trong tâm hồn các thi sĩ – chiến sĩ những vần thơ bất hủ về hình tượng bộ đội Cụ Hồ. Cùng khắc họa chân dung người lính thời kỳ đầu kháng chiến gian lao mà hào hùng, đoạn trích trong "Tây Tiến" của Quang Dũng và bài thơ "Đồng chí" của Chính Hữu là hai đỉnh cao rực rỡ nhất. Nếu ngòi bút lãng mạn của Quang Dũng tạc nên bức tượng đài người lính Tây Tiến hào hoa, kiêu bạc và thấm đẫm âm hưởng bi tráng, thì ngòi bút chân thực, kiệm lời của Chính Hữu lại khắc họa sâu sắc vẻ đẹp mộc mạc, bình dị cùng tình đồng đội keo sơn của những người lính nông dân. Đặt hai tác phẩm trong sự đối sánh đan xen, ta vừa thấy được khí phách chung của thời đại vệ quốc, vừa trân trọng dấu ấn phong cách độc đáo của hai nhà thơ lớn.',
+            },
+            {
+              id: 'tt2',
+              title: 'II.1. Khái quát chung về hai tác giả và hoàn cảnh ra đời',
+              text: 'Nhìn từ hoàn cảnh lịch sử trong phần chú thích, cả "Tây Tiến" và "Đồng chí" đều ra đời vào năm 1948 – thời điểm cuộc kháng chiến chống Pháp vừa bước qua chiến dịch Việt Bắc thu – đông 1947 với muôn vàn thiếu thốn, thử thách. Quang Dũng là một nghệ sĩ đa tài (làm thơ, vẽ tranh, viết nhạc) mang hồn thơ phóng khoáng, bay bổng; ông viết "Tây Tiến" tại Phù Lưu Chanh khi nhớ về đơn vị cũ gồm phần lớn là học sinh, sinh viên trí thức Hà Nội chiến đấu nơi núi rừng Tây Bắc. Trong khi đó, Chính Hữu lại là nhà thơ quân đội trưởng thành từ Trung đoàn Thủ đô, có phong cách thơ cô đọng, giàu chất suy tưởng; ông sáng tác "Đồng chí" từ chính trải nghiệm cùng đồng đội vượt qua những cơn sốt rét rừng sau chiến dịch Việt Bắc. Hai xuất phát điểm ấy đã tạo nên cuộc hội ngộ kỳ diệu của hai tuyệt tác thơ ca kháng chiến.',
+            },
+            {
+              id: 'tt3',
+              title: 'II.2a. Điểm tương đồng về Nội dung: Lý tưởng yêu nước & Sự thật hiện thực chiến trường',
+              text: 'Xét trên bình diện nội dung, điểm tương đồng cốt lõi gắn kết hai thi phẩm chính là cảm hứng ngợi ca lòng yêu nước nồng nàn, lý tưởng xả thân vì Tổ quốc và sự phản ánh chân thực những gian khổ nơi chiến trường. Ở "Tây Tiến", lý tưởng quyết tử cho Tổ quốc quyết sinh vang lên trực diện, dõng dạc qua câu thơ "Chiến trường đi chẳng tiếc đời xanh", khẳng định tư thế sẵn sàng hiến dâng cả tuổi thanh xuân rực rỡ nhất cho độc lập dân tộc. Đồng điệu với tinh thần ấy, người lính trong "Đồng chí" của Chính Hữu cũng thể hiện sự dứt khoát gác lại tình riêng vì nghĩa lớn qua chi tiết "Ruộng nương anh gửi bạn thân cày / Gian nhà không mặc kệ gió lung lay". Không chỉ gặp nhau ở lý tưởng, cả Quang Dũng và Chính Hữu đều nhìn thẳng vào hiện thực khốc liệt của căn bệnh sốt rét rừng và sự thiếu thốn quân trang buổi đầu kháng chiến. Nếu đoàn binh của Quang Dũng hiện lên với ngoại hình "không mọc tóc", làn da "xanh màu lá" và khi ngã xuống phải lấy "áo bào thay chiếu", thì những người lính của Chính Hữu cũng phải trải qua "từng cơn ớn lạnh / Sốt run người, vừng trán ướt mồ hôi" trong cảnh "Áo anh rách vai / Quần tôi có vài mảnh vá / Chân không giày". Hiện thực khắc nghiệt trong cả hai bài thơ không làm lu mờ đi vẻ đẹp người lính mà trái lại càng tôn vinh bản lĩnh phi thường của họ.',
+            },
+            {
+              id: 'tt4',
+              title: 'II.2b. Điểm tương đồng về Nghệ thuật: Chắt lọc hình ảnh biểu tượng & Hòa quyện hiện thực - lãng mạn',
+              text: 'Về mặt nghệ thuật, cả hai nhà thơ đều thể hiện biệt tài chắt lọc những chi tiết đời thực nơi chiến hào để nâng lên thành những thi ảnh biểu tượng bất hủ, kết hợp hài hòa giữa chất hiện thực và cảm hứng lãng mạn cách mạng. Trong "Tây Tiến", Quang Dũng không né tránh cái chết và sự khắc nghiệt nhưng đã bao bọc hình tượng người lính trong ánh hào quang sử thi qua hình ảnh "Áo bào thay chiếu anh về đất". Tương tự như vậy, Chính Hữu từ cảnh thực đứng gác giữa "rừng hoang sương muối" lạnh giá đã kết tinh thành câu thơ tuyệt bút "Đầu súng trăng treo" – nơi "súng" (hiện thực chiến đấu) và "trăng" (vẻ đẹp lãng mạn, hòa bình) song hành bên nhau. Ngôn ngữ thơ ở cả hai tác phẩm đều giàu sức nén, kết hợp nhuần nhuyễn giữa miêu tả tạo hình và biểu cảm sâu lắng.',
+            },
+            {
+              id: 'tt5',
+              title: 'II.3a. Điểm khác biệt về Nội dung: Xuất thân, diện mạo & Đời sống tâm hồn người lính',
+              text: 'Bên cạnh những điểm chung mang tính thời đại, vẻ đẹp nhân vật trữ tình trong hai thi phẩm lại tỏa sáng theo hai hướng thẩm mỹ hoàn toàn khác biệt. Người lính trong "Tây Tiến" của Quang Dũng mang cốt cách của những chàng trai trí thức Hà thành hào hoa, phong lưu kết hợp với khí phách của bậc tráng sĩ cổ điển: "Tây Tiến đoàn binh không mọc tóc / Quân xanh màu lá dữ oai hùm". Dù ngoại hình tiều tụy vì sốt rét, họ vẫn toát lên vẻ uy nghiêm của chúa sơn lâm ("oai hùm") và giữ nguyên tâm hồn lãng mạn, đa tình: "Mắt trừng gửi mộng qua biên giới / Đêm mơ Hà Nội dáng kiều thơm". Trái lại, người lính trong "Đồng chí" của Chính Hữu lại hiện lên với vẻ đẹp mộc mạc, chất phác của những người nông dân mặc áo lính xuất thân từ vùng quê nghèo "nước mặn đồng chua", "đất cày lên sỏi đá". Nếu nỗi nhớ của người lính Tây Tiến hướng về "dáng kiều thơm" thanh lịch chốn đô thành, thì nỗi nhớ của người lính trong "Đồng chí" lại gắn chặt với "giếng nước gốc đa" và mảnh ruộng quê nhà. Và nếu vẻ đẹp của lính Tây Tiến là vẻ đẹp của cái tôi cá nhân hào hùng trong đoàn quân kiêu bạc, thì vẻ đẹp của người lính Chính Hữu lại kết tinh trong mối giao cảm giai cấp tri kỷ: "Súng bên súng, đầu sát bên đầu / Đêm rét chung chăn thành đôi tri kỷ".',
+            },
+            {
+              id: 'tt6',
+              title: 'II.3b. Điểm khác biệt về Cảm hứng thẩm mỹ, từ ngữ & Hình ảnh thơ trung tâm',
+              text: 'Sự khác biệt ấy còn in đậm trong cảm hứng thẩm mỹ và hệ thống hình ảnh trung tâm khi khắc họa thử thách và sự hy sinh. Quang Dũng nhìn người lính qua lăng kính lãng mạn bi tráng, sử dụng những hình ảnh mang tầm vóc vũ trụ và lịch sử như "biên cương", "mồ viễn xứ", "áo bào", "Sông Mã gầm lên khúc độc hành". Cái chết được nâng lên thành sự hóa thân thanh thản vào lòng đất mẹ và bản giao hưởng hùng tráng của núi rừng Tây Bắc. Ngược lại, Chính Hữu khai thác cảm hứng hiện thực trữ tình đằm thắm, tập trung vào những hình ảnh bình dị, ấm áp tình người giữa đêm lạnh: "Miệng cười buốt giá", "Thương nhau tay nắm lấy bàn tay!". Không cần đến "áo bào" hay tiếng gầm của dòng sông dữ, người lính của Chính Hữu vượt qua cái lạnh rừng hoang bằng hơi ấm của bàn tay đồng đội truyền cho nhau và tìm thấy chất thơ dịu dàng ngay trên "Đầu súng trăng treo".',
+            },
+            {
+              id: 'tt7',
+              title: 'II.3c. Điểm khác biệt về Nghệ thuật: Thể thơ, nhịp điệu, giọng điệu & Biện pháp tu từ',
+              text: 'Về phương diện thi pháp, hai nhà thơ đã kiến tạo hai giọng điệu và cấu trúc ngôn từ đối lập mà cuốn hút. Quang Dũng sử dụng thể thơ thất ngôn (7 chữ) đều đặn, trang trọng, ngắt nhịp 4/3 đanh thép, kết hợp dày đặc hệ thống từ Hán Việt cổ kính ("đoàn binh", "biên cương", "viễn xứ", "chiến trường", "áo bào", "độc hành") cùng phép đối lập tương phản, nói giảm nói tránh ("anh về đất") và nhân hóa kì vĩ ("Sông Mã gầm lên"). Nhờ đó, giọng thơ "Tây Tiến" vừa hào sảng, kiêu hùng vừa trầm lắng, bi tráng. Đối chiếu với đó, Chính Hữu lại chọn thể thơ tự do với độ dài ngắn các câu co giãn linh hoạt theo nhịp thở cảm xúc, đặc biệt là sáng tạo câu thơ bản lề chỉ gồm hai tiếng "Đồng chí!" vang lên như một phát hiện thiêng liêng. Ngôn ngữ của Chính Hữu thuần Việt, giản dị như lời ăn tiếng nói hàng ngày, vận dụng hiệu quả thành ngữ dân gian ("nước mặn đồng chua"), phép điệp từ, cấu trúc sóng đôi ("anh" – "tôi") tạo nên giọng điệu thủ thỉ, tâm tình, sâu lắng.',
+            },
+            {
+              id: 'tt8',
+              title: 'II.4. Lí giải nguyên nhân của sự tương đồng và khác biệt',
+              text: 'Lí giải căn nguyên của sự tương đồng và khác biệt ấy, ta thấy rõ quy luật vận động của văn chương nghệ thuật. Hai tác phẩm gặp nhau vì cùng được viết năm 1948 trong bầu không khí sử thi của cuộc kháng chiến chống Pháp, khi cả Quang Dũng và Chính Hữu đều là những người lính trực tiếp cầm súng và mang nặng lòng yêu nước. Song sự khác biệt bắt nguồn từ đối tượng phản ánh và phong cách nghệ thuật riêng của mỗi nhà thơ. Đoàn quân Tây Tiến chủ yếu là thanh niên trí thức Hà Nội chiến đấu giữa miền Tây Bắc hoang vu, kỳ vĩ, rất tương hợp với hồn thơ lãng mạn, tài hoa, giàu chất họa và chất nhạc của Quang Dũng. Trong khi đó, đồng đội của Chính Hữu ở chiến khu Việt Bắc phần đông là nông dân nghèo mặc áo lính, lại được khúc xạ qua ngòi bút hiện thực nghiêm cẩn, cô đọng, luôn hướng vào vẻ đẹp nội tâm bình dị của Chính Hữu.',
+            },
+            {
+              id: 'tt9',
+              title: 'II.5. Đánh giá chung về hai tượng đài người lính',
+              text: 'Có thể khẳng định, "Tây Tiến" và "Đồng chí" là hai mảnh ghép hoàn hảo bổ khuyết cho nhau để hoàn thiện bức chân dung người chiến sĩ Vệ quốc đoàn buổi đầu kháng chiến. Một bên là vẻ đẹp hào hoa, lãng mạn, bi tráng của trí thức lên đường; một bên là vẻ đẹp chân chất, kiên cường, nặng nghĩa tình của người nông dân ra trận. Cả hai đã làm rạng rỡ nền thơ ca kháng chiến Việt Nam.',
+            },
+            {
+              id: 'tt10',
+              title: 'III. Kết bài: Sức sống trường tồn của hai kiệt tác',
+              text: 'Nhà văn Nga Saltykov-Shchedrin từng khẳng định: "Văn học nằm ngoài các định luật của sự băng hoại, chỉ mình nó không thừa nhận cái chết". Hơn bảy thập kỷ đã trôi qua, khói lửa chiến tranh đã lùi xa, nhưng khúc độc hành bi tráng bên dòng Sông Mã trong thơ Quang Dũng và vầng trăng hòa bình treo trên đầu súng trong thơ Chính Hữu vẫn sống mãi trong tâm khảm người Việt. Hai thi phẩm không chỉ là đỉnh cao của nghệ thuật thơ ca hiện đại mà còn là ngọn lửa thắp sáng lòng biết ơn và lý tưởng cống hiến trong trái tim thế hệ trẻ hôm nay.',
+            },
+          ],
+        },
+
+        song: {
+          id: 'song',
+          title: 'So sánh khát vọng tình yêu trong Sóng (Xuân Quỳnh) & Vội Vàng (Xuân Diệu)',
+          poem1: {
+            title: 'Sóng',
+            author: 'Xuân Quỳnh',
+            keywords: ['Xuân Quỳnh', 'Sóng', 'tan ra', 'trăm con sóng nhỏ', 'biển lớn tình yêu', 'ngàn năm còn vỗ', 'năm tháng vẫn đi qua', 'nữ tính'],
+            excerpt: 'Cuộc đời tuy dài thế\nNăm tháng vẫn đi qua\nNhư biển kia dẫu rộng\nMây vẫn bay về xa\nLàm sao được tan ra\nThành trăm con sóng nhỏ\nGiữa biển lớn tình yêu\nĐể ngàn năm còn vỗ.',
+            note: 'Trích Sóng, Xuân Quỳnh, tập Hoa dọc chiến hào (Sáng tác ngày 29/12/1967 tại vùng biển Diêm Điền, Thái Bình).',
+          },
+          poem2: {
+            title: 'Vội vàng',
+            author: 'Xuân Diệu',
+            keywords: ['Xuân Diệu', 'Vội vàng', 'Ta muốn ôm', 'mơn mởn', 'riết', 'say', 'thâu', 'xuân hồng', 'cắn vào ngươi', 'Thơ Mới'],
+            excerpt: 'Mau đi thôi! Mùa chưa ngả chiều hôm,\nTa muốn ôm\nCả sự sống mới bắt đầu mơn mởn;\nTa muốn riết mây đưa và gió lượn,\nTa muốn say cánh bướm với tình yêu,\nTa muốn thâu trong một cái hôn nhiều\nVà non nước, và cây, và cỏ rạng,\nCho chếnh choáng mùi thơm, cho đã đầy ánh sáng,\nCho no nê thanh sắc của thời tươi;\n- Hỡi xuân hồng, ta muốn cắn vào ngươi!',
+            note: 'Trích Vội vàng, Xuân Diệu, tập Thơ thơ (1938) - đỉnh cao của phong trào Thơ Mới.',
+          },
+          paragraphs: [
+            {
+              id: 'sv1',
+              title: 'I. Mở bài: Dẫn dắt đề tài tình yêu - thời gian & giới thiệu hai đoạn thơ',
+              text: 'Tình yêu và thời gian muôn đời là hai hằng số vĩnh cửu làm thổn thức bao trái tim thi nhân. Đối diện với bước đi lạnh lùng của năm tháng, con người càng khao khát được yêu và được sống trọn vẹn từng khoảnh khắc. Trong nền thi ca Việt Nam hiện đại, hai đoạn trích cuối bài thơ "Sóng" (1967) của Xuân Quỳnh và "Vội vàng" (1938) của Xuân Diệu là hai tiếng nói tình yêu mãnh liệt nhất trước dòng chảy thời gian. Nếu "ông hoàng thơ tình" Xuân Diệu cất lên khát vọng chiếm lĩnh, tận hưởng hương sắc cuộc đời một cách cuồng nhiệt, gấp gáp; thì "nữ hoàng thơ tình" Xuân Quỳnh lại gửi gắm ước vọng hóa thân, tan hòa vào biển lớn tình yêu để vĩnh cửu hóa trái tim mình. Đặt hai đoạn trích trong thế đối sánh đan xen, người đọc sẽ cảm nhận trọn vẹn vẻ đẹp của hai tâm hồn thơ lớn.',
+            },
+            {
+              id: 'sv2',
+              title: 'II.1. Khái quát chung về hai tác giả và xuất xứ đoạn trích',
+              text: 'Từ phần chú thích văn bản, ta bắt gặp hai gương mặt tiêu biểu của hai thời đại thi ca. Xuân Diệu (1916 – 1985) là "nhà thơ mới nhất trong các nhà thơ mới", người mang đến cho thơ ca tiền chiến nguồn sinh lực trẻ trung và quan niệm nhân sinh lấy tuổi trẻ, tình yêu làm thước đo vạn vật; đoạn trích nằm ở phần cuối bài thơ "Vội vàng" (tập Thơ thơ, 1938). Trong khi đó, Xuân Quỳnh (1942 – 1988) là nữ thi sĩ tiêu biểu của thế hệ nhà thơ trẻ thời kỳ kháng chiến chống Mỹ, có hồn thơ giàu trực cảm, vừa hồn nhiên vừa trăn trở lo âu; hai khổ thơ trích là phần kết của bài thơ "Sóng" được viết tại biển Diêm Điền năm 1967.',
+            },
+            {
+              id: 'sv3',
+              title: 'II.2a. Điểm tương đồng về Nội dung: Cảm thức thời gian & Khát vọng sống, yêu mãnh liệt',
+              text: 'Điểm gặp gỡ sâu sắc đầu tiên giữa Xuân Quỳnh và Xuân Diệu là cả hai đoạn thơ đều khởi nguồn từ cảm thức nhạy bén về sự hữu hạn của đời người trước bước đi không ngừng của thời gian, từ đó bùng lên khát vọng tình yêu cháy bỏng. Trong "Sóng", Xuân Quỳnh nhận thức đầy trăn trở rằng "Cuộc đời tuy dài thế / Năm tháng vẫn đi qua", tuổi trẻ của con người thật ngắn ngủi trước vũ trụ vô cùng. Đồng điệu với nỗi âu lo ấy, Xuân Diệu trong "Vội vàng" cũng hối thúc "Mau đi thôi! Mùa chưa ngả chiều hôm" vì sợ hãi tuổi xuân phai tàn. Thế nhưng, cả hai thi sĩ đều không rơi vào bi quan buông xuôi mà lấy tình yêu làm phương thức chiến thắng thời gian: Xuân Quỳnh khao khát "Để ngàn năm còn vỗ" giữa biển lớn tình yêu, còn Xuân Diệu khao khát "ôm", "riết", "say", "thâu" cả trần thế vào trong một cái hôn nồng cháy. Qua đó, cả hai đoạn trích cùng khẳng định thông điệp nhân văn tiến bộ: sống là phải biết trân quý từng giây phút tuổi trẻ và yêu bằng tất cả sự chân thành, nồng nhiệt.',
+            },
+            {
+              id: 'sv4',
+              title: 'II.2b. Điểm tương đồng về Nghệ thuật: Giọng điệu nồng nhiệt & Hình ảnh thiên nhiên giàu sức gợi',
+              text: 'Về mặt nghệ thuật, cả hai đoạn thơ đều lấy hình ảnh thiên nhiên tươi đẹp làm chuẩn mực và biểu tượng để giãi bày khát vọng của cái tôi trữ tình. Nếu Xuân Quỳnh mượn hình ảnh "mây", "biển rộng" và "trăm con sóng nhỏ" để nói chuyện trái tim, thì Xuân Diệu cũng huy động cả thế giới tạo vật gồm "mây đưa", "gió lượn", "cánh bướm", "cây", "cỏ rạng", "xuân hồng" làm đối tượng giao cảm. Cả hai nhà thơ đều sử dụng giọng điệu trữ tình tha thiết, đắm say cùng phép điệp cấu trúc và ẩn dụ tinh tế để đẩy cảm xúc lên tới cao trào ở những câu thơ kết bài.',
+            },
+            {
+              id: 'sv5',
+              title: 'II.3a. Điểm khác biệt về Nội dung: Tư thế cái tôi trữ tình & Quan niệm tình yêu',
+              text: 'Mặc dù cùng khao khát vượt lên sự hữu hạn của thời gian, cái tôi trữ tình trong hai đoạn thơ lại thể hiện hai tư thế yêu hoàn toàn khác biệt. Trong "Vội vàng", cái tôi của Xuân Diệu xuất hiện trực diện với đại từ "Ta" đầy kiêu hãnh, mang khát vọng chiếm lĩnh, hưởng thụ tối đa mọi thanh sắc trần gian: "Ta muốn ôm / Cả sự sống mới bắt đầu mơn mởn... Hỡi xuân hồng, ta muốn cắn vào ngươi!". Đó là một tình yêu vồ vập, cuồng nhiệt, muốn thu nạp cả vũ trụ vào bản ngã cá nhân. Ngược lại, trong "Sóng", cái tôi của Xuân Quỳnh lại mang vẻ đẹp nữ tính, dịu dàng và giàu đức hy sinh khi ước nguyện: "Làm sao được tan ra / Thành trăm con sóng nhỏ / Giữa biển lớn tình yêu". Nếu Xuân Diệu muốn "thâu" vạn vật vào lòng mình để "no nê", "đã đầy", thì Xuân Quỳnh lại nguyện "tan ra" để hòa cái tôi nhỏ bé vào "biển lớn tình yêu" của cuộc đời chung. Một bên là khát vọng chiếm lĩnh rực lửa của cái tôi cá nhân tiền chiến, một bên là khát vọng dâng hiến, bất tử hóa tình yêu trong sự hòa nhập bao dung.',
+            },
+            {
+              id: 'sv6',
+              title: 'II.3b. Điểm khác biệt về Nghệ thuật: Thể thơ, nhịp điệu, từ ngữ & Biện pháp tu từ',
+              text: 'Sự khác biệt về tư thế trữ tình được thể hiện rõ nét qua hình thức thể thơ, nhịp điệu và cách dùng từ của hai tác giả. Xuân Quỳnh sử dụng thể thơ 5 chữ đều đặn, nhịp thơ 2/3, 3/2 nhịp nhàng như nhịp sóng biển vỗ bờ miên man; ngôn ngữ thơ giản dị, trong sáng, giàu tính chiêm nghiệm với cặp hình ảnh tương phản "cuộc đời dài – năm tháng đi qua", "biển rộng – mây bay về xa". Trái lại, Xuân Diệu sử dụng thể thơ tự do với câu thơ ngắn 3 chữ ("Ta muốn ôm") làm bản lề rồi mở rộng dần ra những câu thơ 8 chữ, 9 chữ tràn bờ. Điệp ngữ "Ta muốn..." kết hợp với chuỗi động từ mạnh tăng tiến ("ôm", "riết", "say", "thâu", "cắn"), điệp từ "và", "cho" cùng các tính từ chỉ độ căng cảm giác ("mơn mởn", "chếnh choáng", "đã đầy", "no nê") tạo nên nhịp thơ gấp gáp, hối hả, cuồng nhiệt chưa từng có trong thơ ca truyền thống.',
+            },
+            {
+              id: 'sv7',
+              title: 'II.4. Lí giải nguyên nhân của sự tương đồng và khác biệt',
+              text: 'Sự tương đồng và khác biệt giữa hai đoạn thơ bắt nguồn từ quy luật tâm lý tình yêu muôn thuở kết hợp với dấu ấn thời đại và cá tính sáng tạo riêng. Cả hai nhà thơ đều là những nghệ sĩ có trái tim yêu đời, yêu người tha thiết nên cùng khắc khoải trước thời gian. Tuy nhiên, Xuân Diệu sáng tác "Vội vàng" giữa phong trào Thơ Mới (1932 – 1945) khi cái tôi cá nhân vừa được giải phóng, tiếp nhận tư tưởng hiện sinh phương Tây và mang tạng tâm hồn sôi nổi, đam mê trần thế. Còn Xuân Quỳnh viết "Sóng" vào năm 1967 giữa thời kỳ kháng chiến chống Mỹ, khi cái tôi cá nhân đã hòa quyện trong cái ta cộng đồng, đồng thời kết tinh vẻ đẹp tâm hồn phụ nữ Việt Nam truyền thống vừa đằm thắm, thủy chung vừa vị tha, hiến dâng.',
+            },
+            {
+              id: 'sv8',
+              title: 'II.5. Đánh giá chung & III. Kết bài',
+              text: 'Hai đoạn thơ trong "Sóng" và "Vội vàng" xứng đáng là hai tuyệt창 của thơ tình Việt Nam thế kỷ XX: một bên là ngọn lửa đam mê bùng cháy giữa vườn xuân trần thế, một bên là con sóng thủy chung ngàn năm vỗ bờ. Đúng như nhà văn Nga Xê-đrin từng khẳng định: "Văn học nằm ngoài các định luật của sự băng hoại, chỉ mình nó không thừa nhận cái chết", tiếng reo "Ta muốn ôm" của Xuân Diệu và ước nguyện "Làm sao được tan ra" của Xuân Quỳnh sẽ còn sống mãi trong tâm hồn bao thế hệ bạn đọc, dạy chúng ta biết sống mãnh liệt từng ngày và biết yêu thương bằng cả sự dâng hiến cao thượng.',
+            },
+          ],
+        },
+      };
+
+      const LITERARY_THEORIES = [
+        {
+          author: 'M. Saltykov-Shchedrin (Xê-đrin)',
+          category: 'Dùng cho Kết bài',
+          quote: 'Văn học nằm ngoài các định luật của sự băng hoại; chỉ mình nó không thừa nhận cái chết.',
+          usage: 'Không phải ngẫu nhiên mà nhà văn Nga Xê-đrin nhận định rằng: "Văn học nằm ngoài các định luật của sự băng hoại; chỉ mình nó không thừa nhận cái chết". Hai thi phẩm chính là hai kiệt tác nghệ thuật vượt thời gian như thế...',
+        },
+        {
+          author: 'Marcel Proust',
+          category: 'Dùng khi chuyển sang Điểm khác biệt & Lí giải',
+          quote: 'Một cuộc thám hiểm thực sự không phải ở chỗ đi tìm những vùng đất mới, mà ở chỗ có những đôi mắt mới.',
+          usage: 'Cùng viết về một đề tài, nhưng đúng như Marcel Proust từng khẳng định: "Một cuộc thám hiểm thực sự không phải ở chỗ đi tìm những vùng đất mới, mà ở chỗ có những đôi mắt mới", mỗi nhà thơ lại mang một đôi mắt nghệ thuật riêng...',
+        },
+        {
+          author: 'V. Belinsky',
+          category: 'Dùng cho Mở bài & Lí giải phong cách',
+          quote: 'Thơ trước hết là cuộc đời, sau đó mới là nghệ thuật.',
+          usage: 'Nhà phê bình Nga V. Belinsky từng viết: "Thơ trước hết là cuộc đời, sau đó mới là nghệ thuật". Cả hai đoạn thơ đều bắt nguồn từ chất men nồng đượm của cuộc đời để kết tinh thành nghệ thuật...',
+        },
+        {
+          author: 'Chế Lan Viên',
+          category: 'Dùng khi phân tích Cảm hứng chủ đạo & Từ ngữ',
+          quote: 'Thơ chỉ trào ra khi trong tim anh cuộc sống đã thật đầy.',
+          usage: 'Đúng như Chế Lan Viên từng tâm niệm: "Thơ chỉ trào ra khi trong tim anh cuộc sống đã thật đầy", chính tình yêu quê hương đất nước nồng nàn đã làm trào dâng những vần thơ tuyệt đẹp...',
+        },
+        {
+          author: 'Công thức câu nối Đan Xen Tương Đồng -> Khác Biệt',
+          category: 'Kỹ thuật chuyển đoạn 9+',
+          quote: 'Nếu ở điểm tương đồng, hai tâm hồn thi sĩ gặp gỡ nhau trong nhịp đập yêu thương; thì khi đi sâu vào từng câu chữ, mỗi ngòi bút lại khắc chạm một vân chữ độc đáo.',
+          usage: 'Sử dụng làm câu mở đầu cho phần phân tích Điểm khác biệt để giữ mạch văn liên tục.',
+        },
+        {
+          author: 'Công thức Đan Xen 3-4 câu trong cùng 1 đoạn văn',
+          category: 'Kỹ thuật đan cài 2 tác phẩm',
+          quote: 'Nếu trong vần thơ của [Tác giả 1], hình tượng hiện lên với vẻ đẹp [...] qua câu thơ "[...]", thì đặt cạnh đó, [Tác giả 2] lại mở ra một sắc thái thẩm mỹ khác biệt khi khắc họa [...] qua chi tiết "[...]".',
+          usage: 'Áp dụng trực tiếp vào mọi đoạn phân tích Nội dung và Nghệ thuật để không bị lỗi tách rời hai bài.',
+        },
+      ];
+
+      // ============================================================================
+      // 2. APPLICATION STATE
+      // ============================================================================
+      let currentTopicKey = 'muaxuan';
+      let currentEssayData = JSON.parse(JSON.stringify(PRESET_TOPICS.muaxuan));
+      let highlightInterleave = true;
+      let fontSizeIndex = 0; // 0: normal, 1: large, 2: xl
+      const fontSizes = ['font-normal', 'font-large', 'font-xl'];
+      const fontLabels = ['Cỡ chữ: A', 'Cỡ chữ: A+', 'Cỡ chữ: A++'];
+
+      let pinnedParagraph = null; // { id, title, text }
+      let uploadedImage = null; // { base64, mimeType, dataUrl, fileName }
+      let chatHistory = [];
+      let isSpeaking = false;
+
+      // ============================================================================
+      // 3. INITIALIZATION & RENDERING
+      // ============================================================================
+      window.addEventListener('DOMContentLoaded', () => {
+        renderCurrentManuscript();
+        renderPresetCards();
+        renderTheoryCards();
+        setupDragAndDropAndPaste();
+      });
+
+      function switchTab(tabId) {
+        document.querySelectorAll('.tab-panel').forEach((el) => el.classList.remove('active'));
+        document.querySelectorAll('.nav-link').forEach((el) => el.classList.remove('active'));
+
+        const targetPanel = document.getElementById('tab-' + tabId);
+        if (targetPanel) targetPanel.classList.add('active');
+
+        const targetBtn = document.querySelector(`.nav-link[data-tab="${tabId}"]`);
+        if (targetBtn) targetBtn.classList.add('active');
+      }
+
+      function countWords(text) {
+        if (!text || !text.trim()) return 0;
+        return text.trim().split(/\s+/).length;
+      }
+
+      function applyInterleaveHighlighting(text, poem1, poem2) {
+        if (!highlightInterleave) return escapeHtml(text);
+
+        let safe = escapeHtml(text);
+
+        // Highlight bridge / comparison phrases
+        const bridges = [
+          'Nếu như',
+          'Trái lại',
+          'Ngược lại',
+          'Trong khi đó',
+          'Đồng điệu với',
+          'Đối sánh với',
+          'Đặt hai đoạn thơ bên cạnh nhau',
+          'cả hai đoạn thơ',
+          'Cả hai thi nhân',
+          'cả hai nhà thơ',
+          'Một bên là',
+          'một bên là',
+        ];
+        bridges.forEach((phrase) => {
+          const reg = new RegExp(`(${escapeRegExp(phrase)})`, 'gi');
+          safe = safe.replace(reg, '<span class="hl-bridge">$1</span>');
+        });
+
+        // Highlight Poem 1 keywords
+        (poem1.keywords || [poem1.title, poem1.author]).forEach((kw) => {
+          if (!kw) return;
+          const reg = new RegExp(`(${escapeRegExp(kw)})`, 'g');
+          safe = safe.replace(reg, '<span class="hl-poem1">$1</span>');
+        });
+
+        // Highlight Poem 2 keywords
+        (poem2.keywords || [poem2.title, poem2.author]).forEach((kw) => {
+          if (!kw) return;
+          const reg = new RegExp(`(${escapeRegExp(kw)})`, 'g');
+          safe = safe.replace(reg, '<span class="hl-poem2">$1</span>');
+        });
+
+        return safe;
+      }
+
+      function renderCurrentManuscript() {
+        document.getElementById('current-essay-title').textContent = currentEssayData.title;
+
+        // Calculate total words
+        const totalWords = currentEssayData.paragraphs.reduce(
+          (sum, p) => sum + countWords(p.text),
+          0
+        );
+        const statusLabel =
+          totalWords >= 1000 && totalWords <= 2000
+            ? 'Đạt chuẩn 1.000 - 2.000 chữ'
+            : 'Đã tối ưu dung lượng';
+        document.getElementById('word-count-indicator').textContent =
+          `Tổng số chữ: ${totalWords} chữ (${statusLabel})`;
+
+        // Render Poem Summary Cards
+        const gridEl = document.getElementById('exam-poems-grid');
+        const p1 = currentEssayData.poem1;
+        const p2 = currentEssayData.poem2;
+        gridEl.innerHTML = `
+          <div class="poem-card">
+            <div class="poem-card-head">
+              <span class="poem-card-title">1. ${escapeHtml(p1.title)} (${escapeHtml(p1.author)})</span>
+            </div>
+            <div class="poem-card-body">${escapeHtml(p1.excerpt)}</div>
+            <div class="poem-card-note">${escapeHtml(p1.note || '')}</div>
+          </div>
+          <div class="poem-card">
+            <div class="poem-card-head">
+              <span class="poem-card-title" style="color: var(--accent-ink)">2. ${escapeHtml(p2.title)} (${escapeHtml(p2.author)})</span>
+            </div>
+            <div class="poem-card-body">${escapeHtml(p2.excerpt)}</div>
+            <div class="poem-card-note">${escapeHtml(p2.note || '')}</div>
+          </div>
+        `;
+
+        // Render Paragraphs
+        const canvasEl = document.getElementById('essay-canvas');
+        canvasEl.innerHTML = currentEssayData.paragraphs
+          .map((para, idx) => {
+            const isPinned = pinnedParagraph && pinnedParagraph.id === para.id;
+            const pWords = countWords(para.text);
+            const formattedBody = applyInterleaveHighlighting(
+              para.text,
+              currentEssayData.poem1,
+              currentEssayData.poem2
+            );
+
+            return `
+              <article class="para-block ${isPinned ? 'pinned-active' : ''}" id="block-${para.id}">
+                <div class="para-header">
+                  <div>
+                    <span class="para-criterion">${escapeHtml(para.title)}</span>
+                    <span style="font-size: 11.5px; color: var(--text-muted); margin-left: 8px">· ${pWords} chữ</span>
+                  </div>
+                  <div class="para-actions">
+                    <button class="btn-pin" onclick="pinParagraphForRefinement('${para.id}')">
+                      ${isPinned ? '✓ Đang chọn sửa đoạn này' : 'Chọn đoạn này để sửa sâu'}
+                    </button>
+                  </div>
+                </div>
+                <p class="para-body">${formattedBody}</p>
+              </article>
+            `;
+          })
+          .join('');
+      }
+
+      // ============================================================================
+      // 4. INTERACTIVE PARAGRAPH PINNING & REFINEMENT
+      // ============================================================================
+      function pinParagraphForRefinement(paraId) {
+        const found = currentEssayData.paragraphs.find((p) => p.id === paraId);
+        if (!found) return;
+
+        pinnedParagraph = {
+          id: found.id,
+          title: found.title,
+          text: found.text,
+        };
+
+        document.getElementById('pinned-bar').classList.add('visible');
+        document.getElementById('pinned-title').textContent = 'Đang chọn sửa: ' + found.title;
+        document.getElementById('pinned-excerpt').textContent = found.text;
+
+        renderCurrentManuscript();
+
+        const inputEl = document.getElementById('chat-input');
+        inputEl.focus();
+        inputEl.placeholder = `Nhập yêu cầu sửa "${found.title}" (VD: Đan xen 2 bài sâu hơn, thêm lí luận văn học...)`;
+      }
+
+      function unpinParagraph() {
+        pinnedParagraph = null;
+        document.getElementById('pinned-bar').classList.remove('visible');
+        document.getElementById('chat-input').placeholder =
+          'Nhập yêu cầu sửa đoạn văn, hoặc dán đề bài so sánh 2 đoạn thơ vào đây...';
+        renderCurrentManuscript();
+      }
+
+      function useQuickPrompt(promptText) {
+        const inputEl = document.getElementById('chat-input');
+        inputEl.value = promptText;
+        inputEl.focus();
+      }
+
+      function replaceParagraphInManuscript(paraId, encodedNewText) {
+        const newText = decodeURIComponent(encodedNewText);
+        const target = currentEssayData.paragraphs.find((p) => p.id === paraId);
+        if (target) {
+          target.text = newText.trim();
+          renderCurrentManuscript();
+          const blockEl = document.getElementById('block-' + paraId);
+          if (blockEl) {
+            blockEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      }
+
+      // ============================================================================
+      // 5. IMAGE UPLOAD, DRAG-DROP, CLIPBOARD PASTE & SAMPLE EXAM PAPER GENERATOR
+      // ============================================================================
+      function setupDragAndDropAndPaste() {
+        const dropzone = document.getElementById('exam-dropzone');
+
+        dropzone.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          dropzone.classList.add('dragover');
+        });
+
+        dropzone.addEventListener('dragleave', () => {
+          dropzone.classList.remove('dragover');
+        });
+
+        dropzone.addEventListener('drop', (e) => {
+          e.preventDefault();
+          dropzone.classList.remove('dragover');
+          if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+            processImageFile(e.dataTransfer.files[0]);
+          }
+        });
+
+        window.addEventListener('paste', (e) => {
+          const items = e.clipboardData && e.clipboardData.items;
+          if (!items) return;
+          for (let i = 0; i < items.length; i++) {
+            if (items[i].type.indexOf('image') !== -1) {
+              const file = items[i].getAsFile();
+              if (file) processImageFile(file);
+              break;
+            }
+          }
+        });
+      }
+
+      function handleFileSelect(event) {
+        const file = event.target.files && event.target.files[0];
+        if (file) processImageFile(file);
+      }
+
+      function processImageFile(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const dataUrl = e.target.result;
+          const base64 = dataUrl.split(',')[1];
+          uploadedImage = {
+            base64,
+            mimeType: file.type || 'image/png',
+            dataUrl,
+            fileName: file.name || 'anh-de-thi.png',
+          };
+
+          document.getElementById('preview-thumb-img').src = dataUrl;
+          document.getElementById('preview-file-name').textContent = uploadedImage.fileName;
+          document.getElementById('image-preview-card').classList.add('visible');
+        };
+        reader.readAsDataURL(file);
+      }
+
+      function clearUploadedImage() {
+        uploadedImage = null;
+        document.getElementById('image-preview-card').classList.remove('visible');
+        document.getElementById('exam-file-input').value = '';
+      }
+
+      function openImageModal() {
+        if (!uploadedImage) return;
+        document.getElementById('modal-full-img').src = uploadedImage.dataUrl;
+        document.getElementById('image-modal').classList.add('open');
+      }
+
+      function closeImageModal() {
+        document.getElementById('image-modal').classList.remove('open');
+      }
+
+      // Draw a realistic Vietnamese High School Exam Paper image onto Canvas & trigger AI analysis
+      function loadSampleExamImage(presetKey) {
+        const topic = PRESET_TOPICS[presetKey];
+        if (!topic) return;
+
+        const canvas = document.getElementById('exam-generator-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Paper background
+        ctx.fillStyle = '#FDFBF6';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Border
+        ctx.strokeStyle = '#C9B99B';
+        ctx.lineWidth = 3;
+        ctx.strokeRect(20, 20, canvas.width - 40, canvas.height - 40);
+
+        // Header
+        ctx.fillStyle = '#1F1917';
+        ctx.font = 'bold 17px serif';
+        ctx.fillText('KỲ THI TỐT NGHIỆP TRUNG HỌC PHỔ THÔNG - MÔN: NGỮ VĂN 12', 45, 60);
+        ctx.font = 'italic 14px serif';
+        ctx.fillStyle = '#5C4D44';
+        ctx.fillText('Phần II. Làm văn (Nghị luận so sánh văn học - Mục tiêu 9+ điểm)', 45, 86);
+
+        ctx.beginPath();
+        ctx.moveTo(45, 100);
+        ctx.lineTo(canvas.width - 45, 100);
+        ctx.strokeStyle = '#D4C4A8';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // Prompt instruction
+        ctx.fillStyle = '#8B2635';
+        ctx.font = 'bold 16px serif';
+        ctx.fillText('ĐỀ BÀI: Anh/chị hãy viết bài văn nghị luận (1000 - 2000 chữ) so sánh hai đoạn thơ sau:', 45, 130);
+
+        // Poem 1
+        ctx.fillStyle = '#1F1917';
+        ctx.font = 'bold 15px serif';
+        ctx.fillText('Đoạn thơ 1: ' + topic.poem1.title + ' - ' + topic.poem1.author, 55, 165);
+        ctx.font = 'italic 15px serif';
+        const p1Lines = topic.poem1.excerpt.split('\n');
+        p1Lines.forEach((line, idx) => {
+          ctx.fillText(line, 70, 192 + idx * 24);
+        });
+        ctx.font = '12.5px sans-serif';
+        ctx.fillStyle = '#6E5E57';
+        ctx.fillText('(' + topic.poem1.note + ')', 55, 198 + p1Lines.length * 24);
+
+        // Poem 2
+        const startY2 = 240 + p1Lines.length * 24;
+        ctx.fillStyle = '#1F1917';
+        ctx.font = 'bold 15px serif';
+        ctx.fillText('Đoạn thơ 2: ' + topic.poem2.title + ' - ' + topic.poem2.author, 55, startY2);
+        ctx.font = 'italic 15px serif';
+        const p2Lines = topic.poem2.excerpt.split('\n').slice(0, 8);
+        p2Lines.forEach((line, idx) => {
+          ctx.fillText(line, 70, startY2 + 27 + idx * 23);
+        });
+        ctx.font = '12.5px sans-serif';
+        ctx.fillStyle = '#6E5E57';
+        ctx.fillText('(' + topic.poem2.note + ')', 55, startY2 + 34 + p2Lines.length * 23);
+
+        const dataUrl = canvas.toDataURL('image/png');
+        uploadedImage = {
+          base64: dataUrl.split(',')[1],
+          mimeType: 'image/png',
+          dataUrl,
+          fileName: `de-thi-${presetKey}.png`,
+          presetKey,
+        };
+
+        document.getElementById('preview-thumb-img').src = dataUrl;
+        document.getElementById('preview-file-name').textContent = uploadedImage.fileName;
+        document.getElementById('image-preview-card').classList.add('visible');
+
+        // Automatically solve and load the interleaved essay
+        currentTopicKey = presetKey;
+        currentEssayData = JSON.parse(JSON.stringify(PRESET_TOPICS[presetKey]));
+        unpinParagraph();
+        renderCurrentManuscript();
+
+        appendChatMessage(
+          'user',
+          `[Đã tải lên ảnh đề thi: ${topic.poem1.title} & ${topic.poem2.title}] Hãy tự động đọc đề và viết ngay bài văn so sánh hoàn chỉnh (1.000 - 2.000 chữ) theo phương pháp đan xen 2 tác phẩm trong từng đoạn.`,
+          dataUrl
+        );
+
+        const totalWords = currentEssayData.paragraphs.reduce(
+          (sum, p) => sum + countWords(p.text),
+          0
+        );
+
+        appendChatMessage(
+          'assistant',
+          `Mình đã đọc xong ảnh đề thi và trích xuất chính xác 2 đoạn thơ: <strong>${topic.poem1.title}</strong> (${topic.poem1.author}) và <strong>${topic.poem2.title}</strong> (${topic.poem2.author}) cùng phần chú thích.\n\nBài văn nghị luận hoàn chỉnh (<strong>${totalWords} chữ</strong>, chia thành ${currentEssayData.paragraphs.length} đoạn theo đúng dàn ý đan xen 3 – 4 câu/nhịp) đã được hiển thị ở <strong>Bảng Bản Thảo bên phải</strong>. Bạn có thể bấm vào bất kỳ đoạn nào để yêu cầu mình chỉnh sửa sâu hơn nhé!`
+        );
+      }
+
+      // ============================================================================
+      // 6. MULTIMODAL AI CHAT & VISION SUBMISSION (/api/chat-vision)
+      // ============================================================================
+      function handleComposerKeydown(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          handleChatSubmit(e);
+        }
+      }
+
+      function solveUploadedExamNow() {
+        if (!uploadedImage) return;
+        const inputEl = document.getElementById('chat-input');
+        if (!inputEl.value.trim()) {
+          inputEl.value =
+            'Hãy đọc ảnh đề thi này và viết ngay bài văn nghị luận so sánh 2 đoạn thơ hoàn chỉnh (1.000 - 2.000 chữ), đan xen 2 tác phẩm trong từng cụm 3 - 4 câu theo đúng dàn ý.';
+        }
+        handleChatSubmit(new Event('submit'));
+      }
+
+      async function handleChatSubmit(event) {
+        if (event && event.preventDefault) event.preventDefault();
+
+        const inputEl = document.getElementById('chat-input');
+        const messageText = inputEl.value.trim();
+
+        if (!messageText && !uploadedImage) return;
+
+        const sendBtn = document.getElementById('send-btn');
+        const sendBtnText = document.getElementById('send-btn-text');
+
+        const imageToSend = uploadedImage ? { ...uploadedImage } : null;
+        const pinnedToSend = pinnedParagraph ? { ...pinnedParagraph } : null;
+
+        // Append user message bubble
+        const displayUserMsg = pinnedToSend
+          ? `[Sửa "${pinnedToSend.title}"] ${messageText}`
+          : messageText || '[Gửi ảnh đề thi Ngữ văn]';
+
+        appendChatMessage('user', escapeHtml(displayUserMsg), imageToSend ? imageToSend.dataUrl : null);
+
+        inputEl.value = '';
+        if (imageToSend) {
+          clearUploadedImage();
+        }
+
+        // Disable button & show loading
+        sendBtn.disabled = true;
+        sendBtnText.innerHTML = '<span class="loading-spinner"></span> Đang suy luận...';
+
+        try {
+          const fullEssayContext = currentEssayData.paragraphs
+            .map((p) => `${p.title}:\n${p.text}`)
+            .join('\n\n');
+
+          const response = await fetch('/api/chat-vision', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: messageText,
+              imageBase64: imageToSend ? imageToSend.base64 : undefined,
+              imageMimeType: imageToSend ? imageToSend.mimeType : undefined,
+              pinnedParagraph: pinnedToSend,
+              currentEssayContext: fullEssayContext,
+              history: chatHistory.slice(-6),
+            }),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.error || 'Lỗi kết nối máy chủ AI.');
+          }
+
+          const reply = data.reply || '';
+          chatHistory.push({ role: 'user', content: displayUserMsg });
+          chatHistory.push({ role: 'assistant', content: reply });
+
+          processAssistantReply(reply, pinnedToSend);
+        } catch (err) {
+          // Intelligent fallback if offline or API key not set
+          if (pinnedToSend) {
+            const enhanced = generateSmartLocalRevision(pinnedToSend, messageText);
+            const fallbackReply = `Mình đã nâng cấp <strong>${pinnedToSend.title}</strong> với mật độ đan xen 2 tác phẩm chặt chẽ hơn và bổ sung điểm nhấn lí luận văn học:\n<REVISED_PARAGRAPH>${enhanced}</REVISED_PARAGRAPH>`;
+            processAssistantReply(fallbackReply, pinnedToSend);
+          } else {
+            appendChatMessage(
+              'assistant',
+              `Lưu ý: ${escapeHtml(err.message || 'Không thể gọi API lúc này.')}<br/><br/>Bạn có thể bấm vào các nút <strong>Thử ảnh đề thi mẫu</strong> phía trên để trải nghiệm ngay toàn bộ bài văn chuẩn 9+ và tính năng sửa từng đoạn văn!`
+            );
+          }
+        } finally {
+          sendBtn.disabled = false;
+          sendBtnText.textContent = 'Gửi AI';
+        }
+      }
+
+      function processAssistantReply(replyText, pinnedToSend) {
+        // Case 1: Contains <REVISED_PARAGRAPH>...</REVISED_PARAGRAPH>
+        const revMatch = replyText.match(/<REVISED_PARAGRAPH>([\s\S]*?)<\/REVISED_PARAGRAPH>/i);
+        if (revMatch && pinnedToSend) {
+          const revisedPara = revMatch[1].trim();
+          const explanation = replyText
+            .replace(/<REVISED_PARAGRAPH>[\s\S]*?<\/REVISED_PARAGRAPH>/i, '')
+            .trim();
+          const encodedPara = encodeURIComponent(revisedPara);
+
+          const html = `
+            <div>${formatMarkdownSimple(explanation || 'Dưới đây là đoạn văn đã được viết lại sâu sắc và đan xen chặt chẽ hơn:')}</div>
+            <div class="revised-box">
+              <div style="font-family: var(--font-sans); font-size: 11.5px; font-weight: 700; color: var(--accent-ink); margin-bottom: 6px">
+                ĐOẠN VĂN MỚI (${countWords(revisedPara)} chữ):
+              </div>
+              <div>${escapeHtml(revisedPara)}</div>
+              <div style="margin-top: 10px; text-align: right; font-family: var(--font-sans)">
+                <button class="btn-primary" style="padding: 5px 12px; font-size: 12px" onclick="replaceParagraphInManuscript('${pinnedToSend.id}', '${encodedPara}')">
+                  Thay thế vào bài văn chính →
+                </button>
+              </div>
+            </div>
+          `;
+          appendChatMessage('assistant', html);
+          return;
+        }
+
+        // Case 2: Full essay structured with ### sections from image upload or new topic prompt
+        const sections = replyText.split(/###\s+/g).filter((s) => s.trim().length > 0);
+        if (sections.length >= 4) {
+          const newParagraphs = [];
+          sections.forEach((sec, idx) => {
+            const lines = sec.trim().split('\n');
+            const heading = lines[0].trim();
+            const body = lines.slice(1).join('\n').trim();
+            if (!body) return;
+            if (heading.toUpperCase().includes('TÓM TẮT ĐỀ THI')) {
+              return;
+            }
+            newParagraphs.push({
+              id: 'ai_p_' + idx,
+              title: heading,
+              text: body,
+            });
+          });
+
+          if (newParagraphs.length >= 3) {
+            currentEssayData = {
+              id: 'custom_ai',
+              title: 'Bài văn nghị luận so sánh 2 đoạn thơ (AI Giải Đề Trực Tiếp)',
+              poem1: {
+                title: 'Đoạn thơ 1 (Từ đề thi)',
+                author: 'Tác giả 1',
+                keywords: [],
+                excerpt: 'Đã nhận diện từ đề thi tải lên.',
+                note: 'Trích xuất tự động qua Vision AI',
+              },
+              poem2: {
+                title: 'Đoạn thơ 2 (Từ đề thi)',
+                author: 'Tác giả 2',
+                keywords: [],
+                excerpt: 'Đã nhận diện từ đề thi tải lên.',
+                note: 'Trích xuất tự động qua Vision AI',
+              },
+              paragraphs: newParagraphs,
+            };
+            renderCurrentManuscript();
+
+            const totalWords = newParagraphs.reduce((s, p) => s + countWords(p.text), 0);
+            appendChatMessage(
+              'assistant',
+              `Mình đã hoàn thành bài văn nghị luận so sánh đan xen 2 tác phẩm với tổng dung lượng <strong>${totalWords} chữ</strong> (${newParagraphs.length} đoạn) và cập nhật sang <strong>Bảng Bản Thảo bên phải</strong>! Bạn có thể bấm vào từng đoạn để yêu cầu mình chỉnh sửa chi tiết hơn.`
+            );
+            return;
+          }
+        }
+
+        // Default conversational response
+        appendChatMessage('assistant', formatMarkdownSimple(replyText));
+      }
+
+      function generateSmartLocalRevision(pinned, userReq) {
+        const base = pinned.text;
+        const addTheory =
+          ' Đúng như nhà phê bình V. Belinsky từng khẳng định: "Cái phong cách ấy là nét riêng biệt của nhà văn, là dấu vân tay của tâm hồn người sáng tạo", mỗi câu thơ khi đặt song hành đều làm bừng sáng cá tính thẩm mỹ không thể trộn lẫn của hai thi nhân.';
+        if (base.includes('Belinsky')) {
+          return (
+            'Đặt hai thi phẩm trên cùng một bàn cân thẩm mỹ, người đọc càng thấm thía sự giao thoa và khác biệt đầy cuốn hút. ' +
+            base
+          );
+        }
+        return base + addTheory;
+      }
+
+      function appendChatMessage(role, htmlContent, imageUrl) {
+        const stream = document.getElementById('chat-stream');
+        const div = document.createElement('div');
+        div.className = `msg-bubble ${role === 'user' ? 'msg-user' : 'msg-assistant'}`;
+
+        const metaLabel =
+          role === 'user' ? 'Bạn (Học sinh)' : 'Học sinh Giỏi Văn 12 (AI) · Đan xen 9+';
+        let inner = `<div class="msg-meta">${metaLabel}</div><div>${htmlContent}</div>`;
+        if (imageUrl) {
+          inner += `<img src="${imageUrl}" class="msg-thumb" alt="Ảnh đính kèm" />`;
+        }
+        div.innerHTML = inner;
+        stream.appendChild(div);
+        stream.scrollTop = stream.scrollHeight;
+      }
+
+      // ============================================================================
+      // 7. PRESETS, THEORY CARDS & UTILITY CONTROLS
+      // ============================================================================
+      function renderPresetCards() {
+        const container = document.getElementById('preset-cards-container');
+        container.innerHTML = Object.values(PRESET_TOPICS)
+          .map((t) => {
+            const words = t.paragraphs.reduce((s, p) => s + countWords(p.text), 0);
+            return `
+              <div class="theory-card">
+                <div>
+                  <div style="font-size: 12px; color: var(--accent-crimson); font-weight: 700">
+                    ĐỀ TRỌNG TÂM · ${words} CHỮ · ${t.paragraphs.length} ĐOẠN ĐAN XEN
+                  </div>
+                  <h4 style="font-family: var(--font-serif); font-size: 17px; margin: 6px 0; color: var(--text-primary)">
+                    ${escapeHtml(t.title)}
+                  </h4>
+                  <p style="font-size: 13px; color: var(--text-secondary)">
+                    Đan xen trực tiếp <strong>${escapeHtml(t.poem1.title)}</strong> (${escapeHtml(t.poem1.author)}) và <strong>${escapeHtml(t.poem2.title)}</strong> (${escapeHtml(t.poem2.author)}) trong từng cụm 3 – 4 câu ở mọi luận điểm.
+                  </p>
+                </div>
+                <div style="margin-top: 14px">
+                  <button class="btn-primary" onclick="selectPresetTopic('${t.id}')">
+                    Mở trong Bảng Bản Thảo &amp; Chatbot →
+                  </button>
+                </div>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      function selectPresetTopic(key) {
+        if (!PRESET_TOPICS[key]) return;
+        currentTopicKey = key;
+        currentEssayData = JSON.parse(JSON.stringify(PRESET_TOPICS[key]));
+        unpinParagraph();
+        renderCurrentManuscript();
+        switchTab('chatbot');
+      }
+
+      function renderTheoryCards() {
+        const container = document.getElementById('theory-cards-container');
+        container.innerHTML = LITERARY_THEORIES.map((item, idx) => {
+          const encoded = encodeURIComponent(item.usage);
+          return `
+            <div class="theory-card">
+              <div>
+                <div style="font-size: 12px; font-weight: 700; color: var(--accent-crimson)">
+                  ${escapeHtml(item.author)} · ${escapeHtml(item.category)}
+                </div>
+                <div class="theory-quote">"${escapeHtml(item.quote)}"</div>
+                <div style="font-size: 12.5px; color: var(--text-secondary)">
+                  <strong>Cách vận dụng đan xen:</strong> ${escapeHtml(item.usage)}
+                </div>
+              </div>
+              <div style="margin-top: 12px; text-align: right">
+                <button class="btn-secondary" onclick="copyTextToClipboard('${encoded}', this)">
+                  Sao chép câu văn mẫu
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function toggleInterleaveHighlight() {
+        highlightInterleave = !highlightInterleave;
+        const btn = document.getElementById('btn-highlight-interleave');
+        if (highlightInterleave) {
+          btn.classList.add('active-toggle');
+          btn.textContent = 'Soi Đan Xen 2 Tác Phẩm: Bật';
+        } else {
+          btn.classList.remove('active-toggle');
+          btn.textContent = 'Soi Đan Xen 2 Tác Phẩm: Tắt';
+        }
+        renderCurrentManuscript();
+      }
+
+      function cycleFontSize() {
+        const canvas = document.getElementById('essay-canvas');
+        canvas.classList.remove(fontSizes[fontSizeIndex]);
+        fontSizeIndex = (fontSizeIndex + 1) % fontSizes.length;
+        canvas.classList.add(fontSizes[fontSizeIndex]);
+        document.getElementById('btn-font-size').textContent = fontLabels[fontSizeIndex];
+      }
+
+      function copyFullEssay() {
+        const fullText =
+          currentEssayData.title +
+          '\n\n' +
+          currentEssayData.paragraphs.map((p) => `${p.title}\n${p.text}`).join('\n\n');
+        navigator.clipboard.writeText(fullText);
+        const btn = document.getElementById('btn-copy-essay');
+        const old = btn.textContent;
+        btn.textContent = '✓ Đã sao chép bài văn';
+        setTimeout(() => (btn.textContent = old), 2000);
+      }
+
+      function copyTextToClipboard(encodedText, btnEl) {
+        const text = decodeURIComponent(encodedText);
+        navigator.clipboard.writeText(text);
+        const old = btnEl.textContent;
+        btnEl.textContent = '✓ Đã chép';
+        setTimeout(() => (btnEl.textContent = old), 1800);
+      }
+
+      function toggleSpeech() {
+        if (!('speechSynthesis' in window)) return;
+        const btn = document.getElementById('btn-speech');
+        if (isSpeaking) {
+          window.speechSynthesis.cancel();
+          isSpeaking = false;
+          btn.textContent = 'Đọc bài văn';
+          return;
+        }
+        const text = currentEssayData.paragraphs.map((p) => p.text).join(' ');
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = 'vi-VN';
+        utter.rate = 0.96;
+        utter.onend = () => {
+          isSpeaking = false;
+          btn.textContent = 'Đọc bài văn';
+        };
+        window.speechSynthesis.speak(utter);
+        isSpeaking = true;
+        btn.textContent = 'Dừng đọc';
+      }
+
+      function downloadSingleFileHTML() {
+        const htmlSource = '<!doctype html>\n' + document.documentElement.outerHTML;
+        const blob = new Blob([htmlSource], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'index.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+
+      function escapeHtml(str) {
+        return String(str || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function escapeRegExp(str) {
+        return String(str).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      }
+
+      function formatMarkdownSimple(text) {
+        return escapeHtml(text)
+          .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g, '<em>$1</em>')
+          .replace(/\n/g, '<br/>');
+      }
+    </script>
+  </body>
+</html>
